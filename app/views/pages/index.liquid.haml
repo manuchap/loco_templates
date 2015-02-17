@@ -5,12 +5,36 @@ published: true
 !!!
 %html{lang: "en"}
   %head
-    %meta{charset: "utf-8"}
-    %title {{ site.name }}
-    %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
-    %meta{name: "description", value: "{{ site.meta_description }}"}
+  %meta{charset: "utf-8"}
+  %title {{ site.name }}
+  %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
+  %meta{name: "description", value: "{{ site.meta_description }}"}
+  {% csrf_meta %}
   %body
-    %h1 {{ page.title }}
-    {% block 'main' %}
-    %p Lorem ipsum....
-    {% endblock %}
+  {% unless session.user %}
+  {% assign login = log.login %}
+  {% assign password = log.password %}
+  {% with_scope email: login %}
+  {% for entry in contents.users %}
+  {% if entry.password == password %}
+  {% session_assign user = entry._slug %}
+  {% case entry.type %}
+  {% when 'admin' %}
+  {% session_assign type = 'admin' %}
+  {% when 'user' %}
+  {% session_assign type = 'user' %}
+  {% endcase %}
+  {% else %}
+  {% session_assign user = nil %}
+  {% session_assign type = nil %}
+  {% endif %}
+  {% endfor %}
+  {% endwith_scope %}
+  {% endunless %}
+  {% block 'main' %}
+  {% if session.user != nil %}
+  {% include loggedin %}
+  {% else %}
+  {% include 'login' %}
+  {% endif %}
+  {% endblock %}

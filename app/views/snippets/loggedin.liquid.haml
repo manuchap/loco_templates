@@ -1,0 +1,5 @@
+{% capture title %}{{ session.user | capitalize }}'s&nbsp;{{ page.title | downcase }}{% endcapture %}
+%h1 {{ title }}
+%p {{ session.type | capitalize | prepend: 'Session Type: '}}
+%p {{ session.user | capitalize | prepend: 'Session User: '}}
+%input{:onclick => "document.cookie = \"wagon.session=; expires=Thu, 01 Jan 2000 00:00:00 GMT\";location.href='/'", :type => "button", :value => "SignOff"}/

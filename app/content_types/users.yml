@@ -1,0 +1,66 @@
+# Human readable name of this type
+name: Users
+
+# Lowercase, underscored handle used to access this type
+slug: users
+
+# Explanatory text displayed in the back-office
+description: A description of the content type for the editors
+
+# Slug of field used to identify entries by default, such as the title
+label_field_name: first_name
+
+# Valid values: manually, created_at, updated_at, or the slug of any field
+order_by: manually
+
+# Valid values: asc (ascending) and desc (descending). Set to asc by default.
+# order_direction: asc
+
+# Specify a field slug to group entries by that field in the back-office.
+group_by: type
+
+# Activate public 'create' API (e.g for a contact form)
+# public_submission_enabled: false
+
+# Array of emails to be notified of new entries made with the public API
+# public_submission_accounts: ['john@example.com']
+
+# A list describing each field
+fields:
+- first_name: # The lowercase, underscored name of the field
+    label: First name # Human readable name of the field
+    type: string
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- last_name: # The lowercase, underscored name of the field
+    label: Last name # Human readable name of the field
+    type: string
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- email: # The lowercase, underscored name of the field
+    label: Email # Human readable name of the field
+    type: email
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- password: # The lowercase, underscored name of the field
+    label: Password # Human readable name of the field
+    type: string
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- type: # The lowercase, underscored name of the field
+    label: Type # Human readable name of the field
+    type: select
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false    # if localized, use
+    #   en: ['option1_en', 'option2_en']
+    #   fr: ['option1_fr', 'option2_fr']
+    select_options: ['user', 'admin']

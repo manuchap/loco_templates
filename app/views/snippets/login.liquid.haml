@@ -1,0 +1,10 @@
+%h1 {{ page.title }}
+%form#myForm{:action => "{{ contents.logs.public_submission_url }}", :method => "POST"}
+  {% csrf_param %}
+  %input{:type => "hidden", :name => "success_callback", :value => "/"}/
+  %input{:type => "hidden", :name => "error_callback",   :value => "/"}/
+  %input{:type => "hidden", :name => "content[date]",    :value => "{{ now }}"}/
+  %input{:type => "hidden", :name => "content[ip]",      :value => "{{ ip_address }}"}/
+  %input#login{   :type => "email",    :name => "content[login]",    :placeholder => "Login (email)", :value => "{{ log.login }}"}/
+  %input#password{:type => "password", :name => "content[password]", :placeholder => "Password",      :value => "{{ log.password }}"}/
+  %button{:type => "submit"} SignIn

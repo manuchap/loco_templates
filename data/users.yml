@@ -2,10 +2,10 @@
     last_name: "User"
     email: "user@user.com"
     password: "userpass"
-    type: user # Use the value of a select option defined in the app/content_types/Users.rb file.
+    type: user
 
 - "Admin1":
     last_name: "Admin"
     email: "admin@admin.com"
     password: "adminpass"
-    type: admin # Use the value of a select option defined in the app/content_types/Users.rb file.
+    type: admin

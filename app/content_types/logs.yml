@@ -1,55 +1,31 @@
-# Human readable name of this type
 name: logs
-
-# Lowercase, underscored handle used to access this type
 slug: logs
-
-# Explanatory text displayed in the back-office
 description: A description of the content type for the editors
-
-# Slug of field used to identify entries by default, such as the title
 label_field_name: login
-
-# Valid values: manually, created_at, updated_at, or the slug of any field
 order_by: created_at
-
-# Valid values: asc (ascending) and desc (descending). Set to asc by default.
 order_direction: asc
-
-# Specify a field slug to group entries by that field in the back-office.
-# group_by: <your field>
-
-# Activate public 'create' API (e.g for a contact form)
 public_submission_enabled: true
-
-# Array of emails to be notified of new entries made with the public API
-# public_submission_accounts: ['john@example.com']
-
-# A list describing each field
 fields:
-- login: # The lowercase, underscored name of the field
-    label: Login # Human readable name of the field
+- login:
+    label: Login
     type: string
     required: true
     hint: Explanatory text displayed in the back office
     localized: false
-
-- password: # The lowercase, underscored name of the field
-    label: Password # Human readable name of the field
+- password:
+    label: Password
     type: string
     required: true
     hint: Explanatory text displayed in the back office
     localized: false
-
-- date: # The lowercase, underscored name of the field
-    label: Date # Human readable name of the field
+- date:
+    label: Date
     type: date_time
     required: true
     hint: Explanatory text displayed in the back office
     localized: false
-
-- ip: # The lowercase, underscored name of the field
-    label: Ip # Human readable name of the field
+- ip:
+    label: Ip
     type: string
     required: true
     hint: Explanatory text displayed in the back office

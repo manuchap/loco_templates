@@ -1,0 +1,30 @@
+<script type="text/javascript">
+$('#visite').click(function() {
+  var tour = new Tour({
+    steps: [{
+      element: "#v1",
+      title: "Astuce 1/4: Recherche libre",
+      content: "Recherchez un des mots de l'intitulé de la formation.",
+      backdrop: true
+    }, {
+      element: "#v2",
+      title: "Astuce 2/4: Filtres",
+      content: "Filtrez par département, domaine ou niveau.",
+      backdrop: true
+    }, {
+      element: "#v3",
+      title: "Astuce 3/4: Détails",
+      content: "Cliquez sur voir la fiche pour l'ouvrir dans un nouvelle fenêtre.",
+      backdrop: true
+    }, {
+      element: "#v4",
+      title: "Astuce 4/4: Vue",
+      content: "Afficher les résultats en liste ou en grille.",
+      placement: "left",
+      backdrop: true
+    }]
+  });
+  tour.init();
+  tour.restart();
+});
+</script>

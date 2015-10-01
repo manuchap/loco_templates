@@ -1,0 +1,58 @@
+---
+- 'Exemple de formation azer#1':
+    _slug: azer
+    dom: administration-comptabilite-gestion-secretariat-communication
+    for: afpma-pole-formation-des-industries-technologiques-de-l
+    des: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed enim
+      augue, a molestie nisl. Fusce pulvinar cursus nunc eget pharetra. Integer cursus
+      feugiat sem, sed malesuada nibh facilisis a. Etiam ut libero urna. Sed sit amet
+      elementum ligula. Nam nibh orci, pellentesque quis dignissim ac, adipiscing
+      ut dolor. Ut et porttitor mauris. Vestibulum et magna erat, vel fringilla quam.
+      Curabitur ut augue arcu, et sodales enim. In vitae mauris non lectus laoreet
+      facilisis quis at ligula. Sed non metus quis purus ultrices dapibus. Nulla eget
+      lacus eget sapien dapibus viverra et vel nulla. Curabitur quis interdum metus.
+      Maecenas eleifend aliquam semper.</p>"
+    dea: 1
+    hee: 1
+    hef: 1
+    niv: 1 (Bac+4-5)
+    obj: Diplôme
+    doc: azer
+- 'Exemple de formation qsdf#2':
+    _slug: exemple-de-formation-number-2
+    dom: agriculture-agroalimentaire
+    for: antenne-du-cfa-transport-logistique-aftral
+    des: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed enim
+      augue, a molestie nisl. Fusce pulvinar cursus nunc eget pharetra. Integer cursus
+      feugiat sem, sed malesuada nibh facilisis a. Etiam ut libero urna. Sed sit amet
+      elementum ligula. Nam nibh orci, pellentesque quis dignissim ac, adipiscing
+      ut dolor. Ut et porttitor mauris. Vestibulum et magna erat, vel fringilla quam.
+      Curabitur ut augue arcu, et sodales enim. In vitae mauris non lectus laoreet
+      facilisis quis at ligula. Sed non metus quis purus ultrices dapibus. Nulla eget
+      lacus eget sapien dapibus viverra et vel nulla. Curabitur quis interdum metus.
+      Maecenas eleifend aliquam semper.</p>"
+    dea: 3
+    hee: 3
+    hef: 3
+    niv: 2 (Bac+3-4)
+    obj: Emploi
+    doc: qsdf
+- 'Exemple de formation avec un titre vachement plus long que les autres#1':
+    _slug: exemple-de-formation-number-3
+    dom: batiments-travaux-publics
+    for: afpma-pole-formation-des-industries-technologiques-de-l
+    des: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed enim
+      augue, a molestie nisl. Fusce pulvinar cursus nunc eget pharetra. Integer cursus
+      feugiat sem, sed malesuada nibh facilisis a. Etiam ut libero urna. Sed sit amet
+      elementum ligula. Nam nibh orci, pellentesque quis dignissim ac, adipiscing
+      ut dolor. Ut et porttitor mauris. Vestibulum et magna erat, vel fringilla quam.
+      Curabitur ut augue arcu, et sodales enim. In vitae mauris non lectus laoreet
+      facilisis quis at ligula. Sed non metus quis purus ultrices dapibus. Nulla eget
+      lacus eget sapien dapibus viverra et vel nulla. Curabitur quis interdum metus.
+      Maecenas eleifend aliquam semper.</p>"
+    dea: 3
+    hee: 3
+    hef: 3
+    niv: 2 (Bac+3-4)
+    obj: Emploi
+    doc: qsdf

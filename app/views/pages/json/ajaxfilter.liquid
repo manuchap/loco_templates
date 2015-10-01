@@ -1,0 +1,23 @@
+---
+title: Ajaxfilter
+slug: ajaxfilter
+is_layout: false
+listed: false
+published: true
+cache_strategy: none
+response_type: application/json
+position: 100
+---
+[
+	{% for formation in contents.formations %}
+	{
+		"titre":"{{ formation.tit }}" ,
+		"description":"{{ formation.des | truncate: 255 }}" ,
+		"niveau":"{{ formation.niv }}" ,
+		"domaine":"{{ formation.dom.nom | truncate: 40 }}",
+		"cp":"{{ formation.for.cop }}",
+		"ville":"{{ formation.for.vil | capitalize }}",
+		"link":"{{ formation._slug }}"
+	}{% unless forloop.last %},{% else %}{% endunless %}
+	{% endfor %}
+]

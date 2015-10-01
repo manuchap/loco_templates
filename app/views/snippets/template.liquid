@@ -1,0 +1,45 @@
+<script id="formation-template" type="text/html">
+  <div class="col-md-4 formation">
+    <div class="thumbnail">
+      <span class="label label-success rating">
+        <i class="glyphicon glyphicon-star"></i>
+      </span>
+      <div class="caption">
+        <h4><%= titre.substring(0,25) %></h4>
+        <div class="outline">
+          <%= description %>
+        </div>
+        <div class="detail">
+          <dl>
+            <dt>Niveau:</dt>
+            <dd>
+              <%= niveau %>
+            </dd>
+            <dt>Domaine:</dt>
+            <dd>
+              <%= domaine %>
+            </dd>
+            <dt>Ville:</dt>
+            <dd>
+              <%= ville %>
+            </dd>
+            <dt>Code Postal:</dt>
+            <dd>
+              <%= cp %>
+            </dd>
+          </dl>
+        </div>
+        <hr class="hrfiche" />
+        <div class="voir text-center">
+          <a href="/formations/<%= link %>" target="_blank">Voir la fiche</a>
+          <i id="v3" class="glyphicon glyphicon-search"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="voir text-center">
+    <span class="label label-success rating">
+      <i class="glyphicon glyphicon-star"></i>
+    </span>
+  </div>
+</script>

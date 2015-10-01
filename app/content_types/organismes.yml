@@ -1,0 +1,71 @@
+---
+name: Organismes
+description: Organismes de formation
+slug: organismes
+label_field_name: nom
+order_by: nom
+order_direction: asc
+fields:
+- nom:
+    label: Nom
+    type: string
+    required: true
+    unique: false
+    localized: false
+- con:
+    label: Contact
+    type: string
+    required: false
+    unique: false
+    localized: false
+- tel:
+    label: Téléphone
+    type: string
+    required: true
+    unique: false
+    localized: false
+- fax:
+    label: Fax
+    type: string
+    required: false
+    unique: false
+    localized: false
+- mel:
+    label: Mail
+    type: string
+    required: true
+    unique: false
+    localized: false
+- web:
+    label: Page web
+    type: string
+    required: false
+    unique: false
+    localized: false
+- rue:
+    label: Rue
+    type: string
+    required: true
+    unique: false
+    localized: false
+- cop:
+    label: CP
+    type: string
+    required: true
+    unique: false
+    localized: false
+- vil:
+    label: Ville
+    type: string
+    required: true
+    unique: false
+    localized: false
+- for:
+    label: Formation
+    type: has_many
+    required: false
+    unique: false
+    localized: false
+    class_name: formations
+    inverse_of: dom
+    ui_enabled: true

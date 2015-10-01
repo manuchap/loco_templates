@@ -1,0 +1,96 @@
+---
+title: Accueil
+is_layout: false
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+---
+{% include sig %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.name }}</title>
+  <meta name="keywords" value="{{ site.meta_keywords }}" />
+  <meta name="description" value="{{ site.meta_description }}" />
+  {% include 'styles' %}
+</head>
+
+<body>
+  {% block 'main' %}
+  <div class="container-fluid">
+    <h1 class="title">Formations
+      <span id="visite" class="glyphicon glyphicon-question-sign pull-right"></span>
+      <div id="v4" class="btn-group pull-right" role="group" aria-label="...">
+        <button id="grid" type="button" class="btn btn-default glyphicon glyphicon-th"></button>
+        <button id="list" type="button" class="btn btn-default glyphicon glyphicon-th-list"></button>
+      </div>
+    </h1>
+    <hr/>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="well">
+          <fieldset id="dep_criteria">
+            <legend>Résultats:&nbsp;
+              <span id="total_formations">0</span>
+            </legend>
+            <form class="form-inline searchbox" id="v1">
+              <div class="form-group">
+                <label class="sr-only" for="searchbox">Recherche</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="searchbox" placeholder="Chercher …">
+                  <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </fieldset>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="well" id="v2">
+          <fieldset id="dep_criteria">
+            <legend>Département</legend>
+            <select class="form-control" id="dep_filter">
+              <option value="all">Tous</option>{% for formation in contents.formations %}
+              <option id="{{ formation.for.cop }}"
+              value="{{ formation.for.cop }}">{% include 'dept' %}</option>{% endfor %}
+            </select>
+          </fieldset>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="well">
+          <fieldset id="dom_criteria">
+            <legend>Domaine</legend>
+            <select class="form-control" id="dom_filter">
+              <option value="all">Tous</option>{% for activite in (0..contents.domaines.activite_options.size) %} {% assign hop= contents.domaines.activite_options[activite]%}
+              <optgroup label="{{contents.domaines.activite_options[activite]}}">{% with_scope activite: hop %} {% for domaine in contents.domaines %}<option id="{{ domaine.nom }}" value="{{ domaine.nom }}">{{ domaine.nom }}</option>{% endfor %}{% endwith_scope %} {% endfor %}</optgroup>
+            </select>
+          </fieldset>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="well">
+          <fieldset id="lvl_criteria">
+            <legend>Niveau</legend>
+            <select class="form-control" id="lvl_filter">
+              <option value="all">Tous</option>{% for niv_option in contents.formations.niv_options %}
+              <option
+              id="{{ niv_option }}" value="{{ niv_option }}">{{ niv_option }}</option>{% endfor %}
+            </select>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div class="formations content" id="formations"></div>
+  </div>
+  {% include template %}
+  {% include 'scripts' %}
+  {% include 'visite' %}
+  {% endblock %}
+</body>

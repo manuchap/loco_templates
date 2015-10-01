@@ -1,0 +1,88 @@
+---
+name: Formations
+description: Listes des formations
+slug: formations
+label_field_name: tit
+order_by: tit
+order_direction: asc
+group_by: for
+fields:
+- dom:
+    label: Domaines
+    type: belongs_to
+    hint: Taper $ pour voir la liste complete
+    required: true
+    unique: false
+    localized: false
+    class_name: domaines
+    ui_enabled: true
+- for:
+    label: Organisme formateur
+    type: belongs_to
+    hint: Taper $ pour voir la liste complete
+    required: true
+    unique: false
+    localized: false
+    class_name: organismes
+    ui_enabled: true
+- tit:
+    label: Intitulé
+    type: string
+    hint: Libellé de la formation
+    required: true
+    unique: false
+    localized: false
+- des:
+    label: Description
+    type: text
+    hint: Contenu de la formation
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- dea:
+    label: Durée (en années)
+    type: integer
+    required: false
+    unique: false
+    localized: false
+- hee:
+    label: Heures en entrprise
+    type: integer
+    required: false
+    unique: false
+    localized: false
+- hef:
+    label: Heures en formation
+    type: integer
+    required: false
+    unique: false
+    localized: false
+- niv:
+    label: Niveau formation
+    type: select
+    required: false
+    unique: false
+    localized: false
+    select_options:
+    - 1 (Bac+4-5)
+    - 2 (Bac+3-4)
+    - 3 (Bac+2)
+    - 4 (Bac/Bac Pro)
+    - 5 (CAP/BEP)
+- obj:
+    label: Objectifs
+    type: select
+    required: false
+    unique: false
+    localized: false
+    select_options:
+    - Qualification
+    - Emploi
+    - Diplôme
+- doc:
+    label: Lien vers le document
+    type: string
+    required: false
+    unique: false
+    localized: false

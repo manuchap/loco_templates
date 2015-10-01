@@ -1,0 +1,53 @@
+---
+title: form_temp
+listed: true
+published: true
+content_type: formations
+---
+{% include sig %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.name }}</title>
+  <meta name="keywords" value="{{ site.meta_keywords }}" />
+  <meta name="description" value="{{ site.meta_description }}" />
+  {% include 'styles' %}
+</head>
+
+<body>
+  <div id="content" class="container">
+    <H1>{{ formation.tit }}</H1>
+    <div class="well">
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Domaine:&nbsp;</strong>{{ formation.dom.nom }}</li>
+        <li class="list-group-item"><strong>Organisme:&nbsp;</strong>{% if formation.for.web %}<a href="{{ formation.for.web }}" target=_blank"">{{ formation.for.nom }}</a>{% else %}{{ formation.for.nom }}{% endif %}</li>
+        <li class="list-group-item"><strong>Niveau requis:&nbsp;</strong>{{ formation.niv }}</li>
+        <li class="list-group-item"><strong>Descriptif:&nbsp;</strong>{{ formation.des }}</li>
+        <li class="list-group-item"><strong>Durée (en années):&nbsp;</strong>{{ formation.dea }}</li>
+        <li class="list-group-item"><strong>Heures en entrprise:&nbsp;</strong>{{ formation.hee }}</li>
+        <li class="list-group-item"><strong>Heures en formation:&nbsp;</strong>{{ formation.hef }}</li>
+        {% if formation.doc %}
+        <li class="list-group-item"><strong>Voir le document officiel:&nbsp;</strong><a href="{{ formation.doc }}" target=_blank"">{{ formation.doc }}</a></li>
+        {% endif %}
+      </ul>
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <a  onclick="window.print();"><i class="glyphicon glyphicon-print"></i></a>
+          <p>Imprimer</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <a id="cmd"><i class="glyphicon glyphicon-list-alt"></i></a>
+          <p>PDF</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="editor"></div>
+  {{ 'jquery-1.11.3.min' | javascript_tag }}
+  {{ 'jspdf.min' | javascript_tag }}
+  {% include 'pdf' %}
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+---
+name: Domaines
+slug: domaines
+label_field_name: nom
+order_by: nom
+order_direction: asc
+group_by: activite
+fields:
+- activite:
+    label: Activité
+    type: select
+    required: true
+    unique: false
+    localized: false
+    select_options:
+    - Agriculture
+    - Industrie
+    - Services
+- nom:
+    label: Domaine
+    type: string
+    required: true
+    unique: false
+    localized: false
+- for:
+    label: Formations
+    type: has_many
+    required: false
+    unique: false
+    localized: false
+    class_name: formations
+    inverse_of: dom
+    ui_enabled: true

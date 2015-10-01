@@ -1,0 +1,61 @@
+---
+- Administration - Comptabilité - Gestion - Secrétariat - Communication:
+    _slug: administration-comptabilite-gestion-secretariat-communication
+    activite: Services
+- Agriculture - Agroalimentaire:
+    _slug: agriculture-agroalimentaire
+    activite: Agriculture
+- Arts appliqués - Artisanat d'art:
+    _slug: arts-appliques-artisanat-dart
+    activite: Services
+- Automobile - Machinisme agricole:
+    _slug: automobile-machinisme-agricole
+    activite: Industrie
+- Bâtiments - Travaux publics:
+    _slug: batiments-travaux-publics
+    activite: Industrie
+- Chimie - Plasturgie - Papier carton:
+    _slug: chimie-plasturgie-papier-carton
+    activite: Industrie
+- Commerce - Vente - Alimentation - Distribution:
+    _slug: commerce-vente-alimentation-distribution
+    activite: Services
+- Electrotechnique - Electronique - Optique-physique:
+    _slug: electrotechnique-electronique-optique-physique
+    activite: Industrie
+- Environnement - Sécurité - Nettoyage - Assainissement:
+    _slug: environnement-securite-nettoyage-assainissement
+    activite: Services
+- Hôtellerie - Restauration - Tourisme:
+    _slug: hotellerie-restauration-tourisme
+    activite: Services
+- Imprimerie - Industries graphiques:
+    _slug: imprimerie-industries-graphiques
+    activite: Industrie
+- Industries du bois et ameublement:
+    _slug: industrie-du-bois-et-ameublement
+    activite: Industrie
+- Informatique - Réseaux:
+    _slug: informatique-reseaux
+    activite: Services
+- Mécanique - Aéronautique - Automatismes:
+    _slug: mecanique-aeronautique-automatismes
+    activite: Industrie
+- Soins esthétiques:
+    _slug: soins-esthetiques
+    activite: Services
+- Sport - Animation:
+    _slug: sport-animation
+    activite: Services
+- Textile - Cuir - Habillement:
+    _slug: textile-cuir-habillement
+    activite: Industrie
+- Transport - Logistique:
+    _slug: transport-logistique
+    activite: Services
+- Travail des métaux - Fonderie:
+    _slug: travail-des-metaux-fonderie
+    activite: Industrie
+- Travail social - Santé:
+    _slug: travail-social-sante
+    activite: Services

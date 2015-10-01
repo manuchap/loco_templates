@@ -1,0 +1,21 @@
+{% capture cp %}{{ formation.for.cop }}{% endcapture %}
+{% capture dep %}{{ cp | divided_by: '1000' }}{% endcapture %}
+{% if dep.size < 2 %}
+	{% case dep %}
+		{% when '1' %}{{ dep | prepend: 0 | append: ' - Ain' }}
+		{% when '3' %}{{ dep | prepend: 0 | append: ' - Allier' }}
+		{% when '7' %}{{ dep | prepend: 0 | append: ' - Ardèche' }}
+	{% endcase %}
+{% else %}
+	{% case dep %}
+		{% when '15' %}{{ dep | append: ' - Cantal' }}
+		{% when '26' %}{{ dep | append: ' - Drôme' }}
+		{% when '38' %}{{ dep | append: ' - Isère' }}
+		{% when '42' %}{{ dep | append: ' - Loire' }}
+		{% when '43' %}{{ dep | append: ' - Haute-Loire' }}
+		{% when '63' %}{{ dep | append: ' - Puy-de-Dôme' }}
+		{% when '69' %}{{ dep | append: ' - Rhône' }}
+		{% when '73' %}{{ dep | append: ' - Savoie' }}
+		{% when '74' %}{{ dep | append: ' - Haute-Savoie' }}
+	{% endcase %}
+{% endif %}

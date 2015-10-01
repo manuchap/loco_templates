@@ -1,0 +1,715 @@
+---
+- AFPMA - POLE FORMATION DES INDUSTRIES TECHNOLOGIQUES DE L'AIN:
+    _slug: afpma-pole-formation-des-industries-technologiques-de-l
+    tel: 04 74 32 36 36
+    fax: 04 74 32 60 94
+    mel: cfai@afpma.fr
+    web: http://www.afpicfai01.com
+    rue: 1 ALLEE DES TYRANDES BP 2
+    cop: 01960
+    vil: PERONNAS CS 90002
+- AGROALIMENTAIRE CFA DES INDUSTRIES AGROALIMENTAIRES (IAA):
+    _slug: agroalimentaire-cfa-des-industries-agroalimentaires-iaa
+    tel: 04 73 14 24 88
+    mel: ifria.auvergne@wanadoo.fr
+    rue: Parc industriel des Gravanches 18 rue Jacqueline Auriol
+    cop: '63100'
+    vil: CLERMONT-FERRAND
+- ANTENNE DU CFA TRANSPORT LOGISTIQUE (AFTRAL):
+    _slug: antenne-du-cfa-transport-logistique-aftral
+    tel: 04 72 02 58 28
+    mel: francoise.nicolas@aftral.com
+    rue: RUE DES SAPHIRS BP 7
+    cop: '38280 '
+    vil: VILLETTE-D'ANTHON
+- ANTENNE DU CFA TRANSPORT LOGISTIQUE (AFTRAL):
+    _slug: antenne-du-cfa-transport-logistique-aftral-1
+    con: MME. BLANCHARD
+    tel: '04 72 02 58 58 '
+    fax: 04 77 48 12 39
+    mel: severine.blanchard@aftral.com
+    rue: 52 RUE DE LA TALAUDIERE
+    cop: '42000 '
+    vil: SAINT-ETIENNE
+- BTP CFA AFRA:
+    _slug: btp-cfa-afra
+    tel: '04 72 52 07 21 '
+    fax: '04 72 17 03 47 '
+    mel: afrabtp@orange.fr
+    rue: 3 PLACE DU PAISY
+    cop: '69570'
+    vil: DARDILLY
+- 'BTP CFA AIN ':
+    _slug: btp-cfa-ain
+    tel: '04 74 21 44 97 '
+    fax: 04 74 21 12 47
+    mel: cfabtp.bourgenbresse@ccca-btp.fr
+    rue: 98 RUE DES COMPAGNONS LES VENNES CS 50253
+    cop: '01006'
+    vil: 'BOURG-EN-BRESSE CEDEX '
+- BTP CFA ALLIER ECOLE DES MÉTIERS DU BÂTIMENT:
+    _slug: btp-cfa-allier-ecole-des-metiers-du-batiment
+    con: Eliane SAVRY
+    tel: 04 70 32 24 16 OU  06 28 91 68 73
+    fax: 04 70 32 82 45
+    mel: " eliane.savry@ccca-btp.fr"
+    rue: 12 route de Charmeil
+    cop: '03700'
+    vil: BELLERIVE-SUR-ALLIER
+- BTP CFA CANTAL:
+    _slug: btp-cfa-cantal
+    con: Geraud ESTIVAL
+    tel: 04 71 23 00 69 OU  06 88 16 17 20
+    mel: geraud.estival@ccca-btp.fr
+    rue: 10 rue Jean Moulin
+    cop: '15500'
+    vil: MASSIAC
+- BTP CFA LOIRE MICHEL CLUZEL:
+    _slug: btp-cfa-loire-michel-cluzel
+    tel: '04 69 68 73 00 '
+    fax: 04 69 68 73 01
+    mel: cfabtp.saintetienne@ccca-btp.fr
+    rue: 21 RUE DE L'APPRENTISSAGE
+    cop: '42000 '
+    vil: SAINT ETIENNE
+- CENTRE DE FORMATION AUX TECHNIQUES DU BATIMENT (CFTB):
+    _slug: centre-de-formation-aux-techniques-du-batiment-cftb
+    tel: 04 71 57 99 90
+    fax: " 04 71 57 99 91"
+    mel: cfabtp.lepuybains@ccca-btp.fr
+    rue: La Croix de Maraud BP 1
+    cop: '43370 '
+    vil: " BAINS"
+- CFA AGEFPI:
+    _slug: cfa-agefpi
+    con: " "
+    tel: 04 76 82 69 00
+    mel: cfa-agefpi@pagora.grenoble-inp.fr
+    rue: 461 RUE DE LA PAPETERIE BP 65
+    cop: '38400'
+    vil: SAINT-MARTIN-D'HERES
+- CFA AGRICOLE DE L'ALLIER A MOULIN:
+    _slug: cfa-agricole
+    tel: 04 70 46 43 67
+    fax: " 0470469060 "
+    mel: cfa.moulins-neuville@educafri.fr
+    rue: Neuvy
+    cop: '03000 '
+    vil: 'MOULINS '
+- CFA AGRICOLE DE LA HAUTE-LOIRE:
+    _slug: cfa-agricole-de-la-haute-loire
+    tel: " 0471745758 "
+    fax: " 0471745750 "
+    mel: " cfa.haute-loire@educagri.fr"
+    rue: Bonnefont
+    cop: '43100 '
+    vil: FONTANNES
+- CFA AGRICOLE DU PUY-DE-DOME:
+    _slug: cfa-agricole-du-puy-de-dome
+    tel: '0473916304 '
+    fax: " 0473915628 "
+    mel: " cfa.puy-de-dome@educagri.fr"
+    rue: Site de Marmilhat BP 70024
+    cop: '63370'
+    vil: " LEMPDES"
+- CFA AGRICOLE ET FORESTIER DU CANTAL:
+    _slug: cfa-agricole-et-forestier-du-cantal
+    tel: " 04 71 46 26 90"
+    fax: " 04 71 48 91 94"
+    mel: " epl.aurillac@educagri.fr"
+    rue: LEGTA Georges Pompidou BP 537
+    cop: '15000 '
+    vil: " AURILLAC "
+- CFA ARDECHE NORD-SEPR:
+    _slug: cfa-ardeche-nord-sepr
+    tel: 04 75 32 40 20
+    fax: 04 75 32 40 27
+    mel: sepr.annonay@sepr.edu
+    rue: 58 CHEMIN DE VILLEDIEU
+    cop: '07100'
+    vil: ANNONAY
+- 'CFA BATIPOLE ':
+    _slug: cfa-batipole
+    tel: 04 75 61 10 10
+    fax: 04 75 61 21 92
+    mel: batipole@cfa-batipole.com.fr
+    rue: 'RUE DE LA SABLIERE '
+    cop: '26250'
+    vil: LIVRON-SUR-DROME
+- CFA BTP NORD ISERE:
+    _slug: cfa-btp-nord-isere
+    tel: 04 74 19 13 40
+    fax: 04 74 19 13 44
+    mel: cfabtp.bourgoinjailleu@ccca-btp.fr
+    rue: 21 BOULEVARD PRE POMMIER
+    cop: '38300'
+    vil: BOURGOIN-JALLIEU
+- 'CFA BUREAUTIQUE ET METIERS TERTIAIRES ':
+    _slug: cfa-bureautique-et-metiers-tertiaires
+    tel: '04 72 85 71 37 '
+    fax: '04 72 85 71 10 '
+    mel: accueilcfa-ciefa@groupe-igs.fr
+    rue: '47 RUE SERGENT MICHEL BERTHET CP 606 '
+    cop: '69258'
+    vil: LYON CEDEX 09
+- CFA CECOF:
+    _slug: cfa
+    con: ''
+    tel: 04 74 38 40 22
+    fax: 04 74 38 41 02
+    mel: cfa@cecof.asso.fr
+    rue: 52 AVENUE DE LA LIBERATION BP 209
+    cop: '01502'
+    vil: 'AMBERIEU-EN-BUGEY CEDEX '
+- CFA CFMDA (CENTRE DE FORMATION MULTIPRO DROME ARDECHE):
+    _slug: cfa-cfmda-centre-de-formation-multipro-drome-ardeche
+    tel: 04 75 61 69 55
+    fax: 04 75 85 60 19
+    mel: contact@cfmda.fr
+    rue: RUE DE LA SABLIERE
+    cop: '26250'
+    vil: LIVRON-SUR-DROME
+- 'CFA CIASEM ':
+    _slug: cfa-ciasem
+    tel: '04 77 59 31 80 '
+    fax: 04 77 59 31 99
+    mel: direction@cfa-mouliniers.com
+    rue: 28 RUE DES MOULINIERS BP 60098
+    cop: '42010'
+    vil: SAINT ETIENNE CEDEX 2
+- CFA CONSULAIRE DES COMPETENCES INTERPROFESSIONNELLES DROMOIS:
+    _slug: cfa-consulaire-des-competences-interprofessionnelles-dromois
+    tel: 04 75 75 70 85
+    fax: 04 75 43 84 11
+    mel: cfa@drome.cci.fr
+    rue: 52-57 RUE BARTHELEMY DE LAFFEMAS BP 1023
+    cop: '26010'
+    vil: VALENCE
+- CFA CREAP:
+    _slug: cfa-creap
+    tel: 04 72 10 94 07
+    fax: '04 72 10 06 30 '
+    mel: cfa.creap.rhone-alpes@cneap.fr
+    rue: 16 RUE PIERRE BRUNIER BP 97
+    cop: '69643 '
+    vil: CALUIRE-ET-CUIRE CEDEX
+- 'CFA DE L''ACADEMIE DE LYON ':
+    _slug: cfa-de-lacademie-de-lyon
+    tel: '04 72 40 43 00 '
+    fax: '04 37 91 21 64 '
+    mel: cfaal@ac-lyon.fr
+    rue: 50 COURS DE LA REPUBLIQUE - CS 90198
+    cop: '69624'
+    vil: 'VILLEURBANNE CEDEX '
+- 'CFA DE L''AFPIA SUD-EST ':
+    _slug: cfa-de-lafpia-sud-est
+    tel: 04 72 69 76 20
+    fax: 04 78 94 94 62
+    mel: info@afpia-sudest.fr
+    rue: 55 RUE FEUILLAT
+    cop: '69003'
+    vil: LYON
+- 'CFA DE L''ARFA ':
+    _slug: cfa-de-larf
+    tel: 04 74 68 25 32
+    fax: 04 74 60 08 88
+    mel: infoscfa@arfa-formation.fr
+    rue: '19 BIS CHEMIN DU MARTELET '
+    cop: '69400'
+    vil: LIMAS
+- 'CFA DE L''AUTOMOBILE DE L''ERIER ':
+    _slug: cfa-de-lautomobile-de-lerier
+    tel: '04 79 65 04 90 '
+    fax: '04 79 25 46 96 '
+    mel: formation.auto@cfa-erier.com
+    rue: 43 RUE DE L'ERIER BP 70021
+    cop: '73290'
+    vil: LA MOTTE-SERVOLEX
+- CFA DE L'IFAI RHONE-ALPES:
+    _slug: cfa-de-lifai-rhone-alpes
+    tel: '04 78 77 20 34 '
+    fax: 04 78 77 35 39
+    mel: ifai.rhonealpes@ifai.fr
+    rue: '60 AVENUE JEAN MERMOZ '
+    cop: '69372'
+    vil: 'LYON CEDEX '
+- CFA DE L'IFRIA RHONE-ALPES:
+    _slug: cfa-de-lifria-rhone-alpes
+    tel: '04 78 95 40 44 '
+    fax: 04 78 60 24 35
+    mel: contact@ifria-rhone-alpes.fr
+    rue: AGRAPOLE - 23 RUE JEAN BALDASSINI
+    cop: '69007'
+    vil: LYON
+- CFA DE L'INSTITUT DES SCIENCES DE LA VIE ET DE LA TERRE (ISVT):
+    _slug: cfa-de-linstitut-des-sciences-de-la-vie-et-de-la-terre-isvt
+    tel: 04 71 02 56 78
+    fax: " 04 71 02 14 13"
+    mel: isvt.cfa@orange.fr
+    rue: " 72 AVENUE DE VALS BP9"
+    cop: '43001 '
+    vil: LE PUY EN VELAY CEDEX
+- 'CFA DE LA CARROSSERIE ':
+    _slug: cfa-de-la-carrosserie
+    tel: '04 50 45 94 27 '
+    fax: 04 50 45 34 44
+    mel: info@cfacarrosserie74.com
+    rue: 31 ROUTE DE SACCONGES
+    cop: '74600'
+    vil: SEYNOD
+- 'CFA DE LA COIFFURE ET DES METIERS DE LA VENTE ':
+    _slug: cfa-de-la-coiffure-et-des-metiers-de-la-vente
+    tel: '04 79 72 32 71 '
+    fax: 04 79 72 35 43
+    mel: cfacoiffureetventechambery@sfr.fr
+    rue: L P LOUIS ARMAND BP 24
+    cop: '73020'
+    vil: CHAMBERY
+- 'CFA DE LA COIFFURE LYCEE GABRIEL FAURE ':
+    _slug: cfa-de-la-coiffure-lycee-gabriel-faure
+    tel: 04 50 45 64 57
+    fax: '04 50 45 78 79 '
+    mel: cfa.coiffure@laposte.net
+    rue: 2 AVENUE DU RHONE
+    cop: '74000'
+    vil: ANNECY
+- CFA DE LA MECANIQUE AUTOMOBILE:
+    _slug: cfa-de-la-mecanique-automobile
+    tel: '04 50 70 36 69 '
+    fax: 04 50 70 43 85
+    mel: cfa.thonon@wanadoo.fr
+    rue: 'CHEMIN DE MORCY BP 166 '
+    cop: '74207'
+    vil: THONON-LES-BAINS CEDEX
+- CFA DE LA PHARMACIE:
+    _slug: cfa-de-la-pharmacie
+    tel: 04 75 44 12 25
+    fax: 04 75 41 17 39
+    mel: cfa.pharm@wanadoo.fr
+    rue: 60 RUE DE NARVIK
+    cop: '07500 '
+    vil: GUILHERAND-GRANGES
+- CFA DE LA SEPR:
+    _slug: cfa-de-la-sepr
+    tel: '04 72 83 27 27 '
+    fax: 04 72 83 27 00
+    mel: accueil@sepr.edu
+    rue: 46 RUE PROFESSEUR ROCHAIX
+    cop: '69424'
+    vil: LYON CEDEX 03
+- 'CFA DES METIERS DE LA FINANCE ET DE LA BANQUE ':
+    _slug: cfa-des-metiers-de-la-finance-et-de-la-banque
+    tel: '04 78 52 68 31 '
+    fax: 04 72 74 10 02
+    mel: lyon@banque-apprentissage.com
+    rue: '2 RUE DE LA FRATERNELLE '
+    cop: '69009'
+    vil: LYON
+- 'CFA DIFCAM BANQUE ET ASSURANCES ':
+    _slug: cfa-difcam-banque-et-assurances
+    tel: 04 76 25 04 04
+    mel: cfa-rhone-alpes@difcam.com
+    rue: 15-17 RUE PAUL CLAUDEL
+    cop: '38041'
+    vil: GRENOBLE CEDEX 09
+- CFA DU BATIMENT DE SAVOIE ET HAUTE-SAVOIE:
+    _slug: cfa-du-batiment-de-savoie-et-haute-savoie
+    tel: '04 79 72 63 63 '
+    fax: '04 79 72 65 34 '
+    mel: info@cfa-batiment.com
+    rue: 319 RUE DU CLOS
+    cop: '73230'
+    vil: SAINT-ALBAN-LEYSSE
+- CFA DU BATIMENT ET DES TRAVAUX PUBLICS "ANDRE GENDRE":
+    _slug: cfa-du-batiment-et-des-travaux-publics-andre-gendre
+    tel: 04 73 44 00 70
+    mel: cfabtp.clermontferrandccca-btp.fr
+    rue: 2 rue Dabert
+    cop: '63000'
+    vil: CLERMONT-FERRAND
+- CFA DU BATIMENT ET DES TRAVAUX PUBLICS LOIRE JEAN DESBENOIT (SITE DE ROANNE):
+    _slug: cfa-du-batiment-et-des-travaux-publics-loire-jean-desbenoit-site-de-roanne
+    tel: '04 77 72 12 62 '
+    fax: 04 77 72 63 60
+    mel: cfabtp.roanne@ccca-btp.fr
+    rue: 'IMPASSE MARCEL CERDAN '
+    cop: '42300'
+    vil: ROANNE
+- CFA DU BATIMENT ET DES TRAVAUX PUBLICS PHILIBERT DE L'ORME:
+    _slug: cfa-du-batiment-et-des-travaux-publics-philibert-de-lorme
+    tel: '04 72 52 21 50 '
+    fax: 04 72 52 21 60
+    mel: cfabtp.dardilly@ccca-btp.fr
+    rue: 4 PLACE DU PAISY
+    cop: '69570 '
+    vil: DARDILLY
+- 'CFA DU CIRFAP ':
+    _slug: cfa-du-cirfap
+    tel: '04 78 77 06 74 '
+    fax: 04 78 77 05 36
+    mel: contact@cirfap.com
+    rue: '10 BOULEVARD EDMOND MICHELET '
+    cop: '69008'
+    vil: LYON
+- CFA DU ROANNAIS:
+    _slug: cfa-du-roannais
+    tel: '04 77 44 83 50 '
+    fax: 04 77 72 38 35
+    mel: cfa.roannais@cfa.fr
+    rue: 155 ROUTE DE BRIENNON
+    cop: '42300'
+    vil: MABLY
+- 'CFA DUCRETET RHONE-ALPES ':
+    _slug: cfa-ducretet-rhone-alpes
+    tel: '04 72 50 50 00 '
+    fax: '04 72 90 43 91 '
+    mel: cfalyon@ducretet.net
+    rue: '2 RUE DE LA DEMOCRATIE '
+    cop: '69200'
+    vil: VENISSIEUX
+- 'CFA ESPACE FORMATION DES METIERS DE L''ARTISANAT ':
+    _slug: cfa-espace-formation-des-metiers-de-lartisanat
+    tel: 04 74 43 67 00
+    fax: 04 74 43 67 08
+    mel: contact@efma.fr
+    rue: CHAMPFLEURI BP 366
+    cop: '38308'
+    vil: BOURGOIN-JALLIEU
+- CFA ETABLISSEMENT COMPAGNONNIQUE D'APPRENTISSAGE RHONE-ALPES:
+    _slug: cfa-etablissement-compagnonnique-d
+    tel: '04 78 53 22 00 '
+    fax: '04 78 54 79 77 '
+    mel: lyon@compagnonsdutourdefrance.org
+    rue: 99 ROUTE DE GENAS
+    cop: '69100'
+    vil: VILLEURBANNE
+- CFA FIPAG:
+    _slug: cfa-fipag
+    tel: 04 76 74 73 40
+    fax: 04 56 52 46 79
+    mel: ce.cfafipag@ac-grenoble.fr
+    rue: 7 PLACE BIR HAKEIM BP 1065
+    cop: '38021'
+    vil: 'GRENOBLE CEDEX '
+- 'CFA FORMASUP AIN-RHONE-LOIRE ':
+    _slug: cfa-formasup-ain-rhone-loire
+    tel: '04 78 77 04 56 '
+    fax: '04 78 77 35 30 '
+    mel: contact@formasup-arl.fr
+    rue: 66 AVENUE JEAN MERMOZ BP 8048
+    cop: '69351'
+    vil: LYON CEDEX 08
+- CFA FORMASUP DES PAYS DE SAVOIE:
+    _slug: cfa-formasup-des-pays-de-savoi
+    tel: 04 50 52 39 24
+    fax: 04 50 51 49 06
+    mel: cmartin@formasup-pds.fr
+    rue: 27 RUE ROYALE BP 2320
+    cop: '74000 '
+    vil: ANNECY
+- CFA FORMASUP ISERE-DROME-ARDECHE:
+    _slug: cfa-formasup-isere-drome-ardeche
+    tel: 04 76 84 56 52
+    fax: '04 38 12 05 03 '
+    mel: info@formasup-ida.com
+    rue: 3 AVENUE MARIE REYNOARD
+    cop: '38000'
+    vil: 'GRENOBLE '
+- CFA FRANCOIS RABELAIS:
+    _slug: cfa-francois-rabelais
+    tel: '04 78 66 88 88 '
+    fax: 04 78 66 88 89
+    mel: 0693504j@ac-lyon.fr
+    rue: CHEMIN LE DODIN BP 24
+    cop: '69571'
+    vil: DARDILLY CEDEX
+- CFA GROISY:
+    _slug: cfa-groisy
+    tel: 04 50 68 00 50
+    fax: 04 50 77 31 04
+    mel: contact@cfa-groisy.com
+    rue: 126 CHEMIN DES METIERS
+    cop: 74570 GROISY
+    vil: GROISY
+- 'CFA IFA DES ALPES ':
+    _slug: cfa-ifa-des-alpes
+    tel: 04 76 49 04 77
+    fax: 04 38 12 05 03
+    mel: ifa.des.alpes@wanadoo.fr
+    rue: '3 AVENUE MARIE REYNOARD '
+    cop: '38000'
+    vil: 'GRENOBLE '
+- CFA IFAIP:
+    _slug: cfa-ifaip
+    tel: '04 72 89 06 36 '
+    fax: '04 72 89 06 27 '
+    mel: info@ifaip.fr
+    rue: 6 RUE JEAN MACE
+    cop: '69190'
+    vil: SAINT-FONS CEDEX
+- 'CFA IFIR ':
+    _slug: cfa-ifir
+    tel: '04 78 77 05 56 '
+    fax: '04 78 77 05 45 '
+    mel: info@ifir.fr
+    rue: 66 AVENUE JEAN MERMOZ BP 8048
+    cop: '69351'
+    vil: LYON CEDEX 08
+- 'CFA IMT INSTITUT DES METIERS ET TECHNIQUES ':
+    _slug: cfa-imt-institut-des-metiers-et-techniques
+    tel: '04 76 28 26 98 '
+    fax: 04 76 28 26 99
+    mel: imt@grenoble.cci.fr
+    rue: 10 RUE AIME PUPIN
+    cop: '38029'
+    vil: 'GRENOBLE CEDEX 02 '
+- 'CFA INTERFORA ALTERNATIVES ':
+    _slug: cfa-interfora-alternatives
+    tel: 04 72 89 06 18
+    fax: 04 72 89 06 27
+    mel: info@interfora.fr
+    rue: 6 RUE JEAN MACE
+    cop: '69190 '
+    vil: SAINT-FONS
+- CFA INTERPROFESSIONNEL D’AMBERT:
+    _slug: cfa-interprofessionnel-dambert
+    tel: 04 73 82 47 47
+    fax: 04-73-82-38-34
+    mel: cfa@cfambert.org
+    rue: 23 rue Blaise Pascal
+    cop: '63600'
+    vil: AMBERT
+- CFA PROPRETE RHONE-ALPES INHNI:
+    _slug: cfa-proprete-rhone-alpes-inhni
+    tel: '04 72 78 34 56 '
+    fax: '04 72 78 34 57 '
+    mel: cfa.rhone-alpes@inhni.com
+    rue: '33 AVENUE DU DOCTEUR GEORGES LEVY '
+    cop: '69693'
+    vil: 'VENISSIEUX '
+- CFA REGIONAL AGRICOLE RHONE-ALPES:
+    _slug: cfa-regional-agricole-rhone-alpes
+    tel: 04 78 66 64 10
+    fax: 04 78 66 64 20
+    mel: cfa.dardilly@educagri.fr
+    rue: '26 CHEMIN DE LA BRUYERE '
+    cop: '69570'
+    vil: DARDILLY
+- CFA REGIONAL DES COMPAGNONS DU DEVOIR DU TOUR DE LA FRANCE (RHONE-ALPES):
+    _slug: cfa-regional-des-compagnons-du-devoir-du-tour-de-la-france-rhone-alpes
+    tel: '04 72 19 85 10 '
+    fax: 04 72 19 85 25
+    mel: compagnonslyon@compagnons-du-devoir.com
+    rue: '53 AVENUE SIDOINE APOLLINAIRE '
+    cop: '69009'
+    vil: LYON
+- CFA REGIONAL DES METIERS DU CHIEN ET DE L'ANIMALERIE:
+    _slug: cfa-regional-des-metiers-du-chien-et-de-lanimalerie
+    tel: 04 73 85 72 84
+    fax: 04 73 85 83 10
+    mel: epl.st-gervais@educagri.fr
+    rue: 'Avenue de la Gare '
+    cop: '63390'
+    vil: SAINT GERMAIN D'AUVERGNE
+- CFA REGIONAL DES MFR RHONE-ALPES:
+    _slug: cfa-regional-des-mfr-rhone-alpes
+    tel: '04 72 86 03 86 '
+    fax: 04 72 86 03 87
+    mel: fr.rhone-alpes@mfr.asso.fr
+    rue: 7 CHEMIN JEAN-MARIE VIANNEY
+    cop: '69130'
+    vil: ECULLY
+- CFA SPECIFIQUES CFA IRI SUP:
+    _slug: cfa-specifiques-cfa-iri-sup
+    tel: 04 73 31 81 14
+    mel: contact@cfa-irisup.fr
+    rue: 91 boulevard Jean-Baptiste Dumas
+    cop: '63000'
+    vil: CLERMONT-FERRAND
+- CFA SPECIFIQUES DE L'EDUCATION NATIONALE EN AUVERGNE (ENA):
+    _slug: cfa-specifiques-de-leducation-nationale-en-auvergne-ena
+    tel: 04 73 99 35 36
+    fax: " 04 73 99 35 31"
+    mel: cfa@ac-clermont.fr
+    rue: 3 avenue Vercingétorix
+    cop: '63033'
+    vil: Clermont-Ferrand
+- CFA SPORT ET ANIMATION RHONE-ALPES:
+    _slug: cfa-sport-et-animation-rhone-alpes
+    tel: 04 37 02 17 74
+    mel: isabelle-dales@ifa.asso.fr
+    rue: 30 AVENUE DU GENERAL LECLERC BP 254
+    cop: '38202'
+    vil: VIENNE CEDEX
+- CFA TECHNIQUES DU BATIMENT ET DE L'ARCHITECTURE:
+    _slug: cfa-techniques-du-batiment-et-de-larchitecture
+    tel: 04 50 92 08 23
+    fax: '04 50 92 86 74 '
+    mel: secretariat@cfa74archibat.fr
+    rue: 59 ROUTE D'ETREMBIERES BP 353
+    cop: '74100'
+    vil: ANNEMASSE
+- 'CFA TEXTILE REGIONAL ':
+    _slug: cfa-textile-regional
+    tel: '04 72 53 63 10 '
+    fax: '04 37 64 69 91 '
+    mel: contact@cfatextile.fr
+    rue: 2 RUE DES MURIERS BP 601
+    cop: '69258'
+    vil: LYON CEDEX
+- CFA UNICEM (A.POILLOT):
+    _slug: cfa-unicem-a-dot-poillot
+    tel: 04 74 88 48 76
+    fax: 04 74 88 54 60
+    mel: cfa.montalieu@unicem.fr
+    rue: 5 RUE DES CARRIERES
+    cop: '38390'
+    vil: MONTALIEU-VERCIEU CEDEX
+- CFA spécialisé (CFAS):
+    _slug: cfa-specialise-cfas
+    tel: 04 73 90 12 12
+    mel: contact@cfasauvergne.com
+    rue: 38 bis avenue de la République
+    cop: '63100'
+    vil: CLERMONT-FERRAND
+- CFAI DE L'AFPM:
+    _slug: cfai-de
+    tel: 04 78 77 45 80
+    fax: '04 78 77 05 25 '
+    mel: contactapprenants@iri-lyon.com
+    rue: 10 BOULEVARD EDMOND MICHELET BP 8051
+    cop: '69351'
+    vil: 'LYON CEDEX 08 '
+- CFAI DE L'INDUSTRIE FORMAVENIR:
+    _slug: cfai-de-lindustrie-formavenir
+    tel: 04 50 98 56 19
+    fax: 04 50 98 56 89
+    mel: cfai74@cfai74.com
+    rue: '31 AVENUE DES MELEZES '
+    cop: '74300 '
+    vil: THYEZ
+- 'CFAI DE SAVOIE ':
+    _slug: cfai-de-savoie
+    tel: '04 79 65 05 25 '
+    fax: '04 79 65 05 49 '
+    mel: apprentissage@cfai-savoie.com
+    rue: 131 RUE DE L'ERIER
+    cop: '73290'
+    vil: LA MOTTE-SERVOLEX
+- CFAI DU DAUPHINE:
+    _slug: cfai-du
+    tel: 04 74 79 07 90
+    fax: 04 74 79 07 91
+    mel: cfai.beaurepaire@cfai38.com
+    rue: PLACE ETIENNE DOLET
+    cop: '38270'
+    vil: BEAUREPAIRE
+- CFAI DU DAUPHINE MAISON DE LA PRODUCTION:
+    _slug: cfai-du-dauphine-maison-de-la-production
+    tel: '04 76 35 33 55 '
+    fax: 04 76 35 12 28
+    mel: cfai.moirans@cfai38.com
+    rue: '83 RUE DE CHATAGNON BP 120 '
+    cop: '38430'
+    vil: MOIRANS
+- 'CFAI LOIRE DE L''AFIL - ROANNE ':
+    _slug: cfai-loire-de-lafil-roanne
+    tel: '04 77 68 49 70 '
+    fax: 04 77 68 49 66
+    mel: igarrido@citedesentreprises.org
+    rue: 225 ROUTE DE CHARLIEU
+    cop: '42300'
+    vil: ROANNE
+- 'CFAI LOIRE DE L''AFIL SAINT ETIENNE ':
+    _slug: cfai-loire-de-lafil-saint-etienne
+    tel: 04 77 93 17 49
+    fax: 04 77 79 66 41
+    mel: cfailoire@citedesentreprises.org
+    rue: 16 BIS BOULEVARD DE L'ETIVALLIERE BP 725
+    cop: '42950'
+    vil: SAINT ETIENNE CEDEX 09
+- INFIRMIERS INSTITUT RÉGIONAL DES FORMATIONS SANITAIRES ET SOCIALES D’AUVERGNE (IRFSSA):
+    _slug: infirmiers-institut-regional-des-formations-sanitaires-et-sociales-dauvergne-irfssa
+    tel: 04 70 48 20 30
+    mel: irfss.auvergne@croix-rouge.fr
+    rue: Croix-rouge française 20 rue du Vert Galant BP 30401
+    cop: '03004'
+    vil: " MOULINS CEDEX"
+- INSTITUT DE FORMATION INTERPROFESSIONNEL (IFI):
+    _slug: institut-de-formation-interprofessionnel-ifi
+    tel: 04 70 35 13 50
+    fax: 04 70 35 13 54
+    mel: " secretariat@ifi03.com"
+    rue: 11 route de Paris
+    cop: '03000'
+    vil: AVERMES
+- INSTITUT DE FORMATION PROFESSIONNELLE (IFP):
+    _slug: institut-de-formation-professionnelle-ifp
+    tel: 04 71 57 98 00
+    fax: " 04 71 57 53 06 "
+    mel: contact@ifp43.fr
+    rue: Les Yssets
+    cop: '43370'
+    vil: " BAINS"
+- INSTITUT DE FORMATION PROFESSIONNELLE ET PERMANENTE (IFPP):
+    _slug: institut-de-formation-professionnelle-et-permanente-ifpp
+    con: ''
+    tel: 04 71 63 81 81
+    fax: 04 71 63 81 80
+    mel: contact@ifpp15.com
+    rue: 8 rue Agricol Perdiguier BP 713
+    cop: '15007 '
+    vil: " AURILLAC CEDEX"
+- INSTITUT DES MÉTIERS:
+    _slug: institut-des-metiers
+    tel: 04 73 23 60 00
+    fax: " 04 73 24 78 73 "
+    mel: 'contact@institut-metiers.fr '
+    rue: Route du Château des Vergnes
+    cop: '63039'
+    vil: CLERMONT-FERRAND CEDEX 2
+- MÉTALLURGIE CENTRE METALLURGIE DE FORMATION DES APPRENTIS DE L’INDUSTRIE D’AUVERGNE  (CFAI):
+    _slug: metallurgie-centre-metallurgie-de-formation-des-apprentis-de-lindustrie-dauvergne-cfai
+    tel: 04 70 28 23 12
+    mel: c.grena@formation-industries-auvergne.fr
+    rue: 62 rue Henri Barbusse BP 1721
+    cop: '03630 '
+    vil: DÉSERTINES
+- PLASTURGIE CENTRE INTERRÉGIONAL DE FORMATION ALTERNÉE DE LA PLASTURGIE (CIRFAP):
+    _slug: plasturgie-centre-interregional-de-formation-alternee-de-la-plasturgie-cirfap
+    tel: 04 78 77 05 35
+    mel: j.prevost@cirfap.com
+    rue: 10 boulevard Edmond Michelet
+    cop: '69008'
+    vil: " LYON"
+- SPORT ET ANIMATION CFA DES MÉTIERS DU SPORT ET DE L’ANIMATION:
+    _slug: sport-et-animation-cfa-des-metiers-du-sport-et-de-lanimation
+    tel: 04 73 30 23 65
+    fax: 04 73 25 08 79
+    mel: " contact@cfa-adasa.com"
+    rue: 1 rue Tourrette BP 90213
+    cop: '63021'
+    vil: CLERMONT-FERRAND CEDEX 2
+- TECHNICAMPUS DE LA SNCF ANTENNE DELOCALISEE DE LYON:
+    _slug: technicampus-de-la-sncf-antenne-delocalisee-de-lyon
+    tel: 04 72 66 48 17
+    mel: TCF-ALT-MAT-SUDEST@SNCF.FR
+    rue: 25 TER QUAI PIERRE SEMARD BP 85
+    cop: '69924'
+    vil: OULLINS CEDEX
+- TRANSPORT ET LOGISTIQUE CFA DU TRANSPORT ET DE LA LOGISTIQUE EN AUVERGNE:
+    _slug: transport-et-logistique-cfa-du-transport-et-de-la-logistique-en-auvergne
+    tel: 04 73 98 07 00
+    mel: cecile.rougeol@aft-iftim.com
+    rue: 17 Rue du Bois Joli
+    cop: '63800'
+    vil: COURNON D’AUVERGNE
+- TRAVAIL SOCIAL INSTITUT DU TRAVAIL SOCIAL DE LA RÉGION AUVERGNE (ITSRA):
+    _slug: travail-social-institut-du-travail-social-de-la-region-auvergne-itsra
+    con: ''
+    tel: 04 73 17 01 08
+    fax: '04 73 17 01 19 '
+    mel: contacts@itsra.net
+    rue: 62 avenue Marx Dormoy
+    cop: '63000'
+    vil: CLERMONT-FERRAND

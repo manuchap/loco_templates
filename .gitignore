@@ -2,3 +2,5 @@
 *.log
 
 icon.png
+
+*.lock

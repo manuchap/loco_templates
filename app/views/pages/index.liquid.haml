@@ -7,10 +7,23 @@ published: true
   %head
     %meta{charset: "utf-8"}
     %title {{ site.name }}
+    %meta#jb-viewport{:content => "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0", :name => "viewport"}/
     %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
     %meta{name: "description", value: "{{ site.meta_description }}"}
+    {{ 'application' | stylesheet_tag }}
+    {{ 'juicebox' | javascript_tag }}
   %body
-    %h1 {{ page.title }}
     {% block 'main' %}
-    %p Lorem ipsum....
+    / START JUICEBOX EMBED
+    :javascript
+      var expanded_jb_gallery = true;
+      new juicebox({
+        configUrl:'/config',
+        themeUrl:'{{ 'theme' | stylesheet_url }}',
+        containerid:'juicebox-container',
+        galleryHeight:'100%',
+        galleryWidth:'100%'
+      });
+    #juicebox-container
+    / END JUICEBOX EMBED
     {% endblock %}

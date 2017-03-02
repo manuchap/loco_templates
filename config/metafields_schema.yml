@@ -1,0 +1,5 @@
+flickr:
+  label: flickr name
+  fields:
+    name:
+      type: string

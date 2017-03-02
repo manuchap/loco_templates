@@ -31,3 +31,7 @@ locales: [en]
 seo_title: templates
 meta_keywords: "some meta keywords"
 meta_description: "some meta description"
+
+metafields:
+  flickr:
+    name: manuite

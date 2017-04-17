@@ -9,8 +9,13 @@ published: true
     %title {{ site.name }}
     %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
     %meta{name: "description", value: "{{ site.meta_description }}"}
-  %body
-    %h1 {{ page.title }}
-    {% block 'main' %}
-    %p Lorem ipsum....
-    {% endblock %}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+%body
+  %h1 Search Wikipedia!
+  %br/
+  %input#searchterm/
+  #results
+    %p
+      Results for
+      %b
+{{ 'application' | javascript_tag }}

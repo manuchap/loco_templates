@@ -1,16 +1,36 @@
 ---
-title: Home page
+title: Members
+handle: members
 published: true
 ---
 !!!
 %html{lang: "en"}
   %head
     %meta{charset: "utf-8"}
-    %title {{ site.name }}
-    %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
-    %meta{name: "description", value: "{{ site.meta_description }}"}
+    %title {{site.name}}
+    %meta{name: "keywords", value: "{{site.meta_keywords}}"}
+    %meta{name: "description", value: "{{site.meta_description}}"}
+    {{ 'application' | stylesheet_tag }}
   %body
-    %h1 {{ page.title }}
+    %h1 {{page.title}}
     {% block 'main' %}
-    %p Lorem ipsum....
+    %table
+      %tr
+        %th Nickname
+        %th First&nbsp;Name
+        %th Last&nbsp;Name
+        %th Description
+        %th Avatar
+        %th Edit
+      {% for member in contents.members %}
+      %tr
+        %td {{member.nickname | capitalize}}
+        %td {{member.first_name | capitalize}}
+        %td {{member.last_name | upcase}}
+        %td {{member.description}}
+        %td
+          %img{:alt => "some_text", :src => "{{member.avatar.url}}", :style => "width:100px;height:100px;"}/
+        %td
+          %a{:href => "{% path_to member %}"} Edit
+      {% endfor %}
     {% endblock %}

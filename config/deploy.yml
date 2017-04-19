@@ -13,3 +13,8 @@
 #   email: john@doe.net
 #   password: apassword
 #   # api_key: <your api key here>
+home:
+  host: 0.0.0.0:5000
+  handle: divine-resonance-1775
+  email: manuchap@gmail.com
+  api_key: bb3be4f0209440288523f2b4ed6894fe2dd868d3

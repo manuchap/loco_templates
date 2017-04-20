@@ -9,14 +9,9 @@ published: true
 {% action 'setMember()' %}
 setProp("member", "{{mem}}");
 {% endaction %}
-%p {{ params.firs }}
-%p {{ params.last }}
-%p {{ params.desc }}
-%p {{ params.file }}
-%p {{member._id}}
 {% action "editMember" %}
 var member = getProp('member');
-updateEntry('members', member._id, { first_name: params.firs, last_name: params.last,  description: params.desc,  avatar: params.file });
+updateEntry('members', member._id, { first_name: params.firs, last_name: params.last,  description: params.desc });
 {% endaction %}
 {% action 'Basic redirection' %}
 redirectTo('members');

@@ -2,22 +2,22 @@
     first_name: "John"
     last_name: "Doe"
     description: "Numquam ut eligendi voluptas harum sed aut blanditiis. Eligendi itaque illum quo mollitia perspiciatis et. Et in suscipit et est. Quia voluptatem esse. Eaque voluptatem quas esse vitae et praesentium sit."
-    avatar: /samples/members/joe.png # Path to a file in the public/samples folder or to a remote and external file.
-
-- "Jodo":
-    first_name: "Joe"
-    last_name: "Doe"
-    description: "Temporibus voluptate libero et laboriosam eum. Quis ut ea quis qui. Corrupti et cum voluptate velit iusto aut. Iure non dolores vel distinctio. In eos ea et qui quis facere explicabo."
-    avatar: /samples/members/john.png # Path to a file in the public/samples folder or to a remote and external file.
+    avatar: /samples/members/joe.png
 
 - "Jado":
     first_name: "Jack"
     last_name: "Doe"
-    description: "Quas qui fugiat. Nihil et unde. Et nam ipsum."
-    avatar: /samples/members/jack.png # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Temporibus voluptate libero et laboriosam eum. Quis ut ea quis qui. Corrupti et cum voluptate velit iusto aut. Iure non dolores vel distinctio. In eos ea et qui quis facere explicabo"
+    avatar: /samples/members/john.png
+
+- "Jado":
+    first_name: "Jade"
+    last_name: "Doe"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed enim augue, a molestie nisl. Fusce pulvinar cursus nunc eget pharetra. Integer cursus feugiat sem, sed malesuada nibh facilisis. "
+    avatar: /samples/members/jade.png
 
 - "Jido":
     first_name: "Jill"
     last_name: "Doe"
-    description: "Ratione aut quo a suscipit voluptates amet dolor. Dignissimos eum voluptas quo laborum maxime nesciunt nihil. Eaque rem aliquam libero qui reiciendis reprehenderit. Odit omnis aut eaque qui et ipsam nihil. Quibusdam molestiae quo."
-    avatar: /samples/members/jill.png # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Ratione aut quo a suscipit voluptates amet dolor. Dignissimos eum voluptas quo laborum maxime nesciunt nihil. Eaque rem aliquam libero qui reiciendis reprehenderit. Odit omnis aut eaque qui et ipsam nihil."
+    avatar: /samples/members/jill.png

@@ -32,8 +32,7 @@ content_type: members
           :preserve
             {{member.description}}
       %td
-        %img{:alt => "some_text", :src => "{{member.avatar.url}}", :style => "width:100px;height:100px;"}/
-        %input{:id => "file", :type => "file"}
+        %img{:alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
       %td
         %input{:type => "submit", :onclick => "updateMember();"}
 {{ 'application' | javascript_tag }}

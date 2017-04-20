@@ -29,7 +29,7 @@ published: true
         %td {{member.last_name | upcase}}
         %td {{member.description}}
         %td
-          %img{:alt => "some_text", :src => "{{member.avatar.url}}", :style => "width:100px;height:100px;"}/
+          %img{:alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
         %td
           %a{:href => "{% path_to member %}"} Edit
       {% endfor %}

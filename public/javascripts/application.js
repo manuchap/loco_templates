@@ -3,7 +3,6 @@ function updateMember() {
   var firs = document.getElementById('firs').value;
   var last = document.getElementById('last').value;
   var desc = document.getElementById('desc').value;
-  var file = document.getElementById('file').value;
-  var yurl = "/saving?nick=" + nick + "&firs=" + firs + "&last=" + last + "&desc=" + desc + "&file=" + file;
+  var yurl = "/saving?nick=" + nick + "&firs=" + firs + "&last=" + last + "&desc=" + desc;
   window.location = yurl;
 }

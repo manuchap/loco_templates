@@ -34,9 +34,14 @@ content_type: members
             :preserve
               {{member.description}}
         %td
-          %img{:alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
+          %img#avatar{:alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
           %br
-          %input{:name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => ""}/
+          %input{:name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "", :onchange => "loadFile(event)"}/
         %td
           %input{:type => "submit"}
+:javascript
+  var loadFile = function(event) {
+    var output = document.getElementById('avatar');
+    output.src = URL.createObjectURL(event.target.files[0]);
+  };
 {% endblock %}

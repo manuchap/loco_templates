@@ -1,23 +1,23 @@
 - "Jody":
     first_name: "John"
     last_name: "Doe"
-    description: "Numquam ut eligendi voluptas harum sed aut blanditiis. Eligendi itaque illum quo mollitia perspiciatis et. Et in suscipit et est. Quia voluptatem esse. Eaque voluptatem quas esse vitae et praesentium sit."
+    description: "Numquam ut eligendi voluptas harum sed aut blanditiis."
     avatar: /samples/members/joe.png
 
-- "Jado":
+- "Jako":
     first_name: "Jack"
     last_name: "Doe"
-    description: "Temporibus voluptate libero et laboriosam eum. Quis ut ea quis qui. Corrupti et cum voluptate velit iusto aut. Iure non dolores vel distinctio. In eos ea et qui quis facere explicabo"
+    description: "Temporibus voluptate libero et laboriosam eum."
     avatar: /samples/members/john.png
 
 - "Jado":
     first_name: "Jade"
     last_name: "Doe"
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed enim augue, a molestie nisl. Fusce pulvinar cursus nunc eget pharetra. Integer cursus feugiat sem, sed malesuada nibh facilisis. "
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     avatar: /samples/members/jade.png
 
 - "Jido":
     first_name: "Jill"
     last_name: "Doe"
-    description: "Ratione aut quo a suscipit voluptates amet dolor. Dignissimos eum voluptas quo laborum maxime nesciunt nihil. Eaque rem aliquam libero qui reiciendis reprehenderit. Odit omnis aut eaque qui et ipsam nihil."
+    description: "Ratione aut quo a suscipit voluptates amet dolor."
     avatar: /samples/members/jill.png

@@ -1,20 +1,14 @@
 ---
 title: Saving
 published: true
+handle: edit_member
 ---
 %h1 {{ page.title }}
-{% capture mem %}{{ params.nick }}{% endcapture %}
-{% with_scope nickname: mem %}
-{% for member in contents.members %}
-{% action 'setMember()' %}
-setProp("member", "{{mem}}");
-{% endaction %}
-{% action "editMember" %}
+{% capture member %}{{ params.slug }}{% endcapture %}
+{% action 'editMember' %}
+setProp("member", "{{member}}");
+var params = getProp('params');
 var member = getProp('member');
-updateEntry('members', member._id, { first_name: params.firs, last_name: params.last,  description: params.desc });
-{% endaction %}
-{% action 'Basic redirection' %}
+updateEntry('members', member, { first_name: params.firs, last_name: params.last, description: params.desc, avatar: params.avat });
 redirectTo('members');
 {% endaction %}
-{% endfor %}
-{% endwith_scope %}

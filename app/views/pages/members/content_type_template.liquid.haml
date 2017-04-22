@@ -4,36 +4,39 @@ content_type: members
 ---
 {% extends 'index' %}
 {% block main %}
-%table
-  %thead
-    %tr
-      %th
-        Nickname
-      %th
-        First&nbsp;name
-      %th
-        Last&nbsp;name
-      %th
-        Description
-      %th
-        Avatar
-      %th
-        Action
-  %tbody
-    %tr
-      %td
-        %input{:id => "nick", :type => "text", :value => "{{member.nickname}}", :disabled => "disabled"}/
-      %td
-        %input{:id => "firs", :type => "text", :value => "{{member.first_name}}"}/
-      %td
-        %input{:id => "last", :type => "text", :value => "{{member.last_name}}"}/
-      %td
-        %textarea{:id => "desc", :rows => "4"}
-          :preserve
-            {{member.description}}
-      %td
-        %img{:alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
-      %td
-        %input{:type => "submit", :onclick => "updateMember();"}
-{{ 'application' | javascript_tag }}
+%form{:action => "{% path_to edit_member %}", :enctype => "multipart/form-data", :method => "post"}
+  %input{:name => "slug", :type => "hidden", :value => "{{member._slug}}"}/
+  %table
+    %thead
+      %tr
+        %th
+          Nickname
+        %th
+          First&nbsp;name
+        %th
+          Last&nbsp;name
+        %th
+          Description
+        %th
+          Avatar
+        %th
+          Action
+    %tbody
+      %tr
+        %td
+          %input{:name => "nick", :type => "text", :value => "{{member.nickname}}"}/
+        %td
+          %input{:name => "firs", :type => "text", :value => "{{member.first_name}}"}/
+        %td
+          %input{:name => "last", :type => "text", :value => "{{member.last_name}}"}/
+        %td
+          %textarea{:name => "desc", :rows => "4"}
+            :preserve
+              {{member.description}}
+        %td
+          %img{:alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
+          %br
+          %input{:name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => ""}/
+        %td
+          %input{:type => "submit"}
 {% endblock %}

@@ -13,7 +13,3 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
-
-#nick {
-    background-color: #ffabab;
-}

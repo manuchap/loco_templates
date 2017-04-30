@@ -12,6 +12,8 @@ content_type: members
         %th
           Nickname
         %th
+          Genre
+        %th
           First&nbsp;name
         %th
           Last&nbsp;name
@@ -26,6 +28,12 @@ content_type: members
         %td
           %input{:name => "nick", :type => "text", :value => "{{member.nickname}}"}/
         %td
+          %select{:name => "genre", :value => ""}
+            %option {{member.genre}}
+            {% for genre_option in contents.members.genre_options %}
+            %option {{genre_option}}
+            {% endfor %}
+        %td
           %input{:name => "firs", :type => "text", :value => "{{member.first_name}}"}/
         %td
           %input{:name => "last", :type => "text", :value => "{{member.last_name}}"}/
@@ -34,7 +42,7 @@ content_type: members
             :preserve
               {{member.description}}
         %td
-          %img#avatar{:alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
+          %img#avatar{ :alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
           %br
           %input{:name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "", :onchange => "loadFile(event)"}/
         %td

@@ -9,6 +9,6 @@ handle: edit_member
 setProp("member", "{{member}}");
 var params = getProp('params');
 var member = getProp('member');
-updateEntry('members', member, { first_name: params.firs, last_name: params.last, description: params.desc, avatar: params.avat });
+updateEntry('members', member, { genre: params.genre, nickname: params.nick, first_name: params.firs, last_name: params.last, description: params.desc, avatar: params.avat });
 redirectTo('members');
 {% endaction %}

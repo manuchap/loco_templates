@@ -11,10 +11,10 @@ description: A description of the content type for the editors
 label_field_name: nickname
 
 # Valid values: manually, created_at, updated_at, or the slug of any field
-order_by: manually
+order_by: created_at
 
 # Valid values: asc (ascending) and desc (descending). Set to asc by default.
-# order_direction: asc
+order_direction: desc
 
 # Specify a field slug to group entries by that field in the back-office.
 # group_by: <your field>
@@ -44,6 +44,15 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
     unique: true
+
+- genre:
+    label: Genre
+    type: select
+    required: false
+    localized: false
+    select_options:
+    - Mr
+    - Mrs
 
 - first_name: # The lowercase, underscored name of the field
     label: First name # Human readable name of the field

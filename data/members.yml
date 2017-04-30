@@ -3,21 +3,26 @@
     last_name: "Doe"
     description: "Numquam ut eligendi voluptas harum sed aut blanditiis."
     avatar: /samples/members/joe.png
+    genre: Mr
 
 - "Jako":
     first_name: "Jack"
     last_name: "Doe"
     description: "Temporibus voluptate libero et laboriosam eum."
     avatar: /samples/members/john.png
+    genre: Mr
 
 - "Jado":
     first_name: "Jade"
     last_name: "Doe"
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     avatar: /samples/members/jade.png
+    genre: Mrs
 
 - "Jido":
     first_name: "Jill"
     last_name: "Doe"
     description: "Ratione aut quo a suscipit voluptates amet dolor."
     avatar: /samples/members/jill.png
+    genre: Mrs
+

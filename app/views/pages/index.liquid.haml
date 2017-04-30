@@ -17,6 +17,7 @@ published: true
     %table
       %tr
         %th Nickname
+        %th Genre
         %th First&nbsp;Name
         %th Last&nbsp;Name
         %th Description
@@ -25,11 +26,12 @@ published: true
       {% for member in contents.members %}
       %tr
         %td {{member.nickname | capitalize}}
+        %td {{member.genre}}
         %td {{member.first_name | capitalize}}
         %td {{member.last_name | upcase}}
         %td {{member.description}}
         %td
-          %img{:alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
+          %img{:style => "width:100px; height:100px", :alt => "{{member.nickname }}", :src => "{{member.avatar.url}}"}/
         %td
           %a{:href => "{% path_to member %}"} Edit
       {% endfor %}

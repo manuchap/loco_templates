@@ -42,7 +42,7 @@ content_type: members
             :preserve
               {{member.description}}
         %td
-          %img#avatar{ :alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
+          %img#avatar{ :style => "width:100px; height:100px", :alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
           %br
           %input{:name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "", :onchange => "loadFile(event)"}/
         %td

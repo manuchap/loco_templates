@@ -18,3 +18,9 @@ home:
   handle: divine-resonance-1775
   email: manuchap@gmail.com
   api_key: bb3be4f0209440288523f2b4ed6894fe2dd868d3
+
+prod:
+  host: manuchap.herokuapp.com
+  handle: tranquil-forest-7362
+  email: manuchap@gmail.com
+  api_key: bb3be4f0209440288523f2b4ed6894fe2dd868d3

@@ -3,7 +3,6 @@ title: Saving
 published: true
 handle: edit_member
 ---
-%h1 {{ page.title }}
 {% capture member %}{{ params.slug }}{% endcapture %}
 {% action 'editMember' %}
 setProp("member", "{{member}}");

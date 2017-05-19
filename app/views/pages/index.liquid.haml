@@ -23,8 +23,7 @@ published: true
         %th Description
         %th Avatar
         %th Edit
-      {% for slide in (2..contents.members.size) %}
-      {% for member in contents.members | limit: 2 | offset: offset %}
+      {% for member in contents.members %}
       %tr
         %td {{member.nickname | capitalize}}
         %td {{member.genre}}
@@ -32,15 +31,9 @@ published: true
         %td {{member.last_name | upcase}}
         %td {{member.description}}
         %td
-          %img{:style => "width:100px; height:100px", :alt => "{{member.nickname }}", :src => "{{member.avatar.url}}"}/
+          %img{:style => "width:100px; height:100px", :alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
         %td
           %a{:href => "{% path_to member %}"} Edit
-      {% endfor %}
-      {% unless forloop.last %}
-      %tr
-        %td empty
-      {% endunless %}
-      {% assign offset = offset | plus: 2 %}
       {% endfor %}
     {% endblock %}
 

@@ -44,7 +44,7 @@ content_type: members
         %td
           %img#avatar{ :style => "width:100px; height:100px", :alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
           %br
-          %input{:name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "", :onchange => "loadFile(event)"}/
+          %input{:name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "{{member.avatar.url}}", :onchange => "loadFile(event)"}/
         %td
           %input{:type => "submit"}
 :javascript

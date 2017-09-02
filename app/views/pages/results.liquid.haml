@@ -16,11 +16,11 @@ handle: results
 %br
 {% endif %}
 {% endconsume %}
-{% consume posts from session.posts_url %}
+{% consume posts from posts_url %}
 pages: {{ posts.pages }}
 {% endconsume %}
 %br
-{% consume posts from session.posts_url %}
+{% consume posts from posts_url %}
 posts: {{ posts.count_total }}
 {% endconsume %}
 %br

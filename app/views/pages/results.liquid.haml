@@ -6,7 +6,7 @@ handle: results
 {% extends 'index' %}
 {% block 'main' %}
 {% session_assign blog_url = params.blog %}
-{% assign infos_url = params.blog | append: '/?json=info' %}
+{% assign infos_url = session.blog_url | append: '/?json=info' %}
 {% assign pages_url = session.blog_url | append: '/?json=get_page_index' %}
 {% assign posts_url = session.blog_url | append: '/?json=get_posts' %}
 {% consume blog from infos_url %}

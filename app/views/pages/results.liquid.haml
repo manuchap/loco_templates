@@ -7,6 +7,7 @@ handle: results
 {% block 'main' %}
 {% session_assign blog_url = params.blog %}
 {% assign infos_url = params.blog | append: '/?json=info' %}
+{% assign pages_url = session.blog_url | append: '/?json=get_page_index' %}
 {% assign posts_url = session.blog_url | append: '/?json=get_posts' %}
 {% consume blog from infos_url %}
 {% if blog == null %}
@@ -16,8 +17,11 @@ handle: results
 %br
 {% endif %}
 {% endconsume %}
-{% consume posts from posts_url %}
-pages: {{ posts.pages }}
+{% consume pages from pages_url %}
+{% for page in pages.pages %}
+{% assign num_pages = forloop.length %}
+{% endfor %}
+pages: {{ num_pages }}
 {% endconsume %}
 %br
 {% consume posts from posts_url %}

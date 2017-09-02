@@ -1,0 +1,56 @@
+---
+title: import
+published: true
+handle: import
+---
+{% assign pages_url = session.blog_url | append: '/?json=get_page_index' %}
+{% assign posts_url = session.blog_url | append: '/?json=get_posts' %}
+{% extends 'index' %}
+{% block 'main' %}
+{% if params.pages == 'on' %}
+{% consume pages from pages_url %}
+{% for page in pages.pages %}
+{% capture title %}{{ page.title }}{% endcapture %}
+{% capture content %}{{ page.content }}{% endcapture %}
+{% capture excerpt %}{{ page.excerpt }}{% endcapture %}
+{% capture date %}{{ page.date }}{% endcapture %}
+{% capture modified %}{{ page.modified }}{% endcapture %}
+{% action 'save_page' %}
+var title = getProp('title');
+var content = getProp('content');
+var excerpt = getProp('excerpt');
+var date = getProp('date');
+var modified = getProp('modified');
+var page = createEntry('pages', { title: title, content: content, excerpt: excerpt, date: date, modified: modified });
+setProp('page', page);
+{% endaction %}
+{% endfor %}
+{% endconsume %}
+{% unless params.posts =='on' %}
+{% action 'success' %}
+redirectTo("success")
+{% endaction %}
+{% endunless %}
+{% endif %}
+{% if params.posts =='on' %}
+{% consume posts from posts_url %}
+{% for post in posts.posts %}
+{% capture title %}{{ post.title }}{% endcapture %}
+{% capture content %}{{ post.content }}{% endcapture %}
+{% capture excerpt %}{{ post.excerpt }}{% endcapture %}
+{% capture date %}{{ post.date }}{% endcapture %}
+{% capture modified %}{{ post.modified }}{% endcapture %}
+{% action 'save_post' %}
+var title = getProp('title');
+var content = getProp('content');
+var excerpt = getProp('excerpt');
+var date = getProp('date');
+var modified = getProp('modified');
+var post = createEntry('posts', { title: title, content: content, excerpt: excerpt, date: date, modified: modified });
+setProp('post', post);
+redirectTo("success")
+{% endaction %}
+{% endfor %}
+{% endconsume %}
+{% endif %}
+{% endblock %}

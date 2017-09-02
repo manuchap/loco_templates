@@ -1,0 +1,44 @@
+- "Sample 1":
+    title: "Vel molestiae enim veniam eveniet iure id facere."
+    # title_plain: "Architecto dicta blanditiis distinctio sit iusto numquam."
+    content: "Et in repellendus repellat veniam."
+    excerpt: "Quas voluptatem laborum in rerum aut."
+    date: 2017/08/27 # YYYY/MM/DD
+    modified: 2017/08/27 # YYYY/MM/DD
+    # attachments: /samples/posts/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # comment_status: "Et error dicta natus sit qui esse quia aut."
+    # custom_fields: "Minus quaerat eaque repellendus voluptatem."
+
+- "Sample 2":
+    title: "Occaecati ab blanditiis sequi aut et exercitationem et."
+    # title_plain: "Hic quia molestiae blanditiis cupiditate."
+    content: "Id debitis voluptatibus sint adipisci officiis eius."
+    excerpt: "Alias ipsam expedita nihil minus repellendus."
+    date: 2017/08/27 # YYYY/MM/DD
+    modified: 2017/08/27 # YYYY/MM/DD
+    # attachments: /samples/posts/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # comment_status: "Veniam et autem rerum."
+    # custom_fields: "Numquam nemo labore unde."
+
+- "Sample 3":
+    title: "Delectus corporis distinctio ratione sequi."
+    # title_plain: "Alias consequatur nostrum voluptatem."
+    content: "Voluptatibus enim qui aperiam dolor ad."
+    excerpt: "Qui soluta eveniet voluptatem rerum et rerum totam."
+    date: 2017/08/27 # YYYY/MM/DD
+    modified: 2017/08/27 # YYYY/MM/DD
+    # attachments: /samples/posts/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # comment_status: "Quod aliquid aut dignissimos et placeat reiciendis."
+    # custom_fields: "Ducimus veniam praesentium debitis cumque sit eum."
+
+- "Sample 4":
+    title: "Et qui in est ut ducimus et perspiciatis consectetur."
+    # title_plain: "Delectus minima dicta possimus non."
+    content: "Explicabo deserunt incidunt magnam officia quae itaque non saepe."
+    excerpt: "Qui ex ut ut."
+    date: 2017/08/27 # YYYY/MM/DD
+    modified: 2017/08/27 # YYYY/MM/DD
+    # attachments: /samples/posts/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # comment_status: "Dolores culpa officiis ratione."
+    # custom_fields: "Nulla vel alias molestias."
+

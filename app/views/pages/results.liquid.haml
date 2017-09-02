@@ -1,0 +1,34 @@
+---
+title: results
+published: true
+handle: results
+---
+{% extends 'index' %}
+{% block 'main' %}
+{% session_assign blog_url = params.blog %}
+{% assign infos_url = params.blog | append: '/?json=info' %}
+{% assign posts_url = session.blog_url | append: '/?json=get_posts' %}
+{% consume blog from infos_url %}
+{% if blog == null %}
+{{ params.blog }} is offline!
+{% else %}
+{{ params.blog }} is online!
+%br
+{% endif %}
+{% endconsume %}
+{% consume posts from session.posts_url %}
+pages: {{ posts.pages }}
+{% endconsume %}
+%br
+{% consume posts from session.posts_url %}
+posts: {{ posts.count_total }}
+{% endconsume %}
+%br
+%form{:action => "{% path_to import %}", :method => "post"}
+  Import:
+  - @names = ['pages','posts']
+  - @names.each do |name|
+    %input{:name => "#{name}", :type => "checkbox"}/
+    #{name}
+  %input{:type => "submit", :value => "Go!"}/
+{% endblock %}

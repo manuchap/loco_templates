@@ -1,6 +1,7 @@
 ---
 title: Home page
 published: true
+handle: index
 ---
 !!!
 %html{lang: "en"}
@@ -9,8 +10,11 @@ published: true
     %title {{ site.name }}
     %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
     %meta{name: "description", value: "{{ site.meta_description }}"}
-  %body
-    %h1 {{ page.title }}
+  %body{:style => "font-family: monospace"}
+    %h1 wp-consumer
     {% block 'main' %}
-    %p Lorem ipsum....
+    %form{:action => "{% path_to results %}", :method => "post"}
+      wordpress blog url (with json-api plugin active):
+      %input{:name => "blog", :value => "{{ blog }}", :type => "text", :placeholder => "http://myblog.com"}/
+      %input{:type => "submit", :value => "Go!"}/
     {% endblock %}

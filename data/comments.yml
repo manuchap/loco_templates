@@ -1,0 +1,44 @@
+- "Sample 1":
+    author_email: "Quo aspernatur reiciendis omnis accusantium nobis aperiam at."
+    author_url: "Eum minus dolore quo eos sunt voluptatem."
+    author_IP: "Ut provident veritatis cum tempore."
+    date: 2017/08/27 # YYYY/MM/DD
+    date_gmt: 2017/08/27 # YYYY/MM/DD
+    content: "Ipsam quia ipsum reiciendis. Quidem vitae sed impedit soluta quo at. Aut exercitationem est in rerum ad natus et. Architecto praesentium quisquam minima sed minus perspiciatis inventore."
+    approved: true # Or false
+    agent: "Ducimus vel fugit est laborum corporis ut quod."
+    type: "Repellat earum a possimus quia."
+
+- "Sample 2":
+    author_email: "Eum corporis sed eum aliquam."
+    author_url: "Rem a ea quas inventore."
+    author_IP: "Nemo blanditiis sit voluptas quod debitis odio adipisci."
+    date: 2017/08/27 # YYYY/MM/DD
+    date_gmt: 2017/08/27 # YYYY/MM/DD
+    content: "Explicabo assumenda non rem sunt. Et nam occaecati ipsam sapiente laudantium eius. Et ut dolorem."
+    approved: true # Or false
+    agent: "Iste dignissimos quaerat animi voluptas voluptas consequatur aut."
+    type: "Et veniam laborum delectus quia sit fugiat."
+
+- "Sample 3":
+    author_email: "Neque sunt rerum quam."
+    author_url: "Quibusdam ducimus velit ea dolor vel ut."
+    author_IP: "Soluta quos itaque earum tempora impedit."
+    date: 2017/08/27 # YYYY/MM/DD
+    date_gmt: 2017/08/27 # YYYY/MM/DD
+    content: "Repellendus sequi asperiores architecto ut ut. Expedita nam repellendus ut. Minima est ratione debitis illo vel quis ex. Illum quia in quis eum doloremque quia. Quaerat ea cum quae magni voluptate similique assumenda."
+    approved: true # Or false
+    agent: "Quidem in odio ad ipsam molestiae."
+    type: "Ab totam corrupti provident eum et iusto delectus."
+
+- "Sample 4":
+    author_email: "Et ullam pariatur placeat quod qui sunt accusantium aut."
+    author_url: "Aut velit enim sit harum."
+    author_IP: "Totam dolore hic modi quia consequatur exercitationem deserunt."
+    date: 2017/08/27 # YYYY/MM/DD
+    date_gmt: 2017/08/27 # YYYY/MM/DD
+    content: "Dolorum corporis eos repudiandae harum maiores. Sed quia assumenda ex. Fugiat et dolore odio quas minus voluptatibus. Maiores inventore ducimus dolores."
+    approved: true # Or false
+    agent: "Asperiores omnis molestiae minus voluptas omnis perferendis consequatur."
+    type: "Sequi labore aut harum cupiditate culpa vel explicabo exercitationem."
+

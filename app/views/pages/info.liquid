@@ -1,0 +1,28 @@
+---
+title: Info page
+response_type: application/json
+---
+{% capture token %}{{site.metafields.info.token}}{% endcapture %}
+{% capture email %}{{site.metafields.info.email}}{% endcapture %}
+{% capture handle %}{{site.metafields.info.handle}}{% endcapture %}
+{% action "Call API" %}
+var token = getProp("token");
+var email = getProp("email");
+var handle = getProp("handle");
+var info = false;
+info = callAPI('GET', 'http://engine.studiowan.fr/locomotive/api/v3/current_site.json', {
+  data: {
+  },
+  headers: {
+    'X-Locomotive-Account-Token': token,
+    'X-Locomotive-Account-Email': email,
+    'X-Locomotive-Site-Handle': handle
+  }
+});
+setProp('info', info);
+{% endaction %}
+{% if info %}
+{{ info | split: "=>" | join: ': ' | split: "nil" | join: '"NULL"' }}
+{% else %}
+<h1>FAILURE!</h1>
+{% endif %}

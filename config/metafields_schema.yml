@@ -1,0 +1,12 @@
+info:
+  label: Informations
+  fields:
+    token:
+      hint: "Your engine's token"
+      type: string
+    email:
+      hint: "Administrator email"
+      type: string
+    handle:
+      hint: "Handle of your site"
+      type: string

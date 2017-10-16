@@ -1,0 +1,15 @@
+---
+title: Ok page
+published: true
+---
+!!!
+%html{lang: "fr"}
+  %head
+    %meta{charset: "utf-8"}
+    %title {{ site.name }}
+    %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
+    %meta{name: "description", value: "{{ site.meta_description }}"}
+  %body
+    {% block 'main' %}
+    OK
+    {% endblock %}

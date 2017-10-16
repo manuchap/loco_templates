@@ -3,14 +3,31 @@ title: Home page
 published: true
 ---
 !!!
-%html{lang: "en"}
+%html{lang: "fr"}
   %head
     %meta{charset: "utf-8"}
     %title {{ site.name }}
     %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
     %meta{name: "description", value: "{{ site.meta_description }}"}
   %body
-    %h1 {{ page.title }}
     {% block 'main' %}
-    %p Lorem ipsum....
+    .fb-login-button{"data-auto-logout-link" => "true", "data-button-type" => "login_with", "data-max-rows" => "1", "data-show-faces" => "false", "data-size" => "large", "data-use-continue-as" => "true"}
+    :javascript
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '220839888442581',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+      };
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+      console.log(response);
     {% endblock %}

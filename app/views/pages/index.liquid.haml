@@ -14,6 +14,8 @@ published: true
   %body
     %h1 {{page.title}}
     {% block 'main' %}
+    %p 
+      %a{:href => "{% path_to new_member %}"}New member
     %table
       %tr
         %th Nickname

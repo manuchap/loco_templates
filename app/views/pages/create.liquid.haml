@@ -1,0 +1,13 @@
+---
+title: Create
+published: true
+handle: create_member
+---
+{% capture member %}{{ params.nick }}{% endcapture %}
+{% action 'createMember' %}
+setProp("member", "{{member}}");
+var params = getProp('params');
+var member = getProp('member');
+createEntry('members', { genre: params.genre, nickname: params.nick, first_name: params.firs, last_name: params.last, description: params.desc, avatar: params.avat });
+redirectTo('members');
+{% endaction %}

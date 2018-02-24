@@ -1,13 +1,13 @@
 ---
-title: Saving
+title: Delete
 published: true
-handle: edit_member
+handle: delete_member
 ---
 {% capture member %}{{ params.slug }}{% endcapture %}
 {% action 'editMember' %}
 setProp("member", "{{member}}");
 var params = getProp('params');
 var member = getProp('member');
-updateEntry('members', member, { genre: params.genre, nickname: params.nick, first_name: params.firs, last_name: params.last, description: params.desc, avatar: params.avat });
+updateEntry('members', member, { published: false });
 redirectTo('members');
 {% endaction %}

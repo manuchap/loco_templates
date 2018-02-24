@@ -1,10 +1,11 @@
 ---
-title: Member
-content_type: members
+title: New Members
+handle: new_member
+published: true
 ---
 {% extends 'index' %}
 {% block main %}
-%form{:id => "someForm", :action => "{% path_to update_member %}", :enctype => "multipart/form-data", :method => "POST"}
+%form{:action => "{% path_to create_member %}", :enctype => "multipart/form-data", :method => "post"}
   %input{:name => "slug", :type => "hidden", :value => "{{member._slug}}"}/
   %table
     %thead
@@ -46,21 +47,10 @@ content_type: members
           %br
           %input{:name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "{{member.avatar.url}}", :onchange => "loadFile(event)"}/
         %td
-          %input{:name => "save", :onclick => "askForSave()", :type => "button", :value => "Save"}/
-          %input{:name => "delete", :onclick => "askForDelete()", :type => "button", :value => "Delete"}/
-
+          %input{:type => "submit"}
 :javascript
   var loadFile = function(event) {
     var output = document.getElementById('avatar');
     output.src = URL.createObjectURL(event.target.files[0]);
   };
-  form=document.getElementById("someForm");
-  function askForSave() {
-          form.action="{% path_to update_member %}";
-          form.submit();
-  }
-  function askForDelete() {
-          form.action="{% path_to delete_member %}";
-          form.submit();
-  }
 {% endblock %}

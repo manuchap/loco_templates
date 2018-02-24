@@ -1,10 +1,11 @@
-home:
-  host: 0.0.0.0:5000
-  handle: divine-resonance-1775
-  email: manuchap@gmail.com
-  api_key: bb3be4f0209440288523f2b4ed6894fe2dd868d3
 prod:
   host: manuchap.herokuapp.com
   handle: tranquil-forest-7362
   email: manuchap@gmail.com
   api_key: bb3be4f0209440288523f2b4ed6894fe2dd868d3
+
+home:
+  host: 0.0.0.0:5000
+  handle: combative-cove-2718
+  email: manuchap@gmail.com
+  api_key: c19fc1a4bf16d914fbf7fcad33119a470c51e09b

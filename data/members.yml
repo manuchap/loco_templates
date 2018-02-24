@@ -1,28 +1,41 @@
-- "Jody":
-    first_name: "John"
-    last_name: "Doe"
-    description: "Numquam ut eligendi voluptas harum sed aut blanditiis."
-    avatar: /samples/members/joe.png
+- Azer:
+    _slug: azer
+    nickname: Azer
     genre: Mr
-
-- "Jako":
-    first_name: "Jack"
-    last_name: "Doe"
-    description: "Temporibus voluptate libero et laboriosam eum."
-    avatar: /samples/members/john.png
+    first_name: Azer
+    last_name: Tobe
+    description: azervdfgbssdnysdtysdthhsdb(ysynsyey
+    avatar: "/samples/content_entries/bugz.png"
+    _visible: false
+- Jody:
+    _slug: jody
+    nickname: Jody
     genre: Mr
-
-- "Jado":
-    first_name: "Jade"
-    last_name: "Doe"
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    avatar: /samples/members/jade.png
+    first_name: John
+    last_name: Doe
+    description: Numquam ut eligendi voluptas harum sed aut blanditiis.
+    avatar: "/samples/content_entries/joe.png"
+- Jako:
+    _slug: jako
+    nickname: Jako
+    genre: Mr
+    first_name: Jack
+    last_name: Doe
+    description: Temporibus voluptate libero et laboriosam eum.
+    avatar: "/samples/content_entries/john.png"
+- Jado:
+    _slug: jado
+    nickname: Jado
     genre: Mrs
-
-- "Jido":
-    first_name: "Jill"
-    last_name: "Doe"
-    description: "Ratione aut quo a suscipit voluptates amet dolor."
-    avatar: /samples/members/jill.png
+    first_name: Jade
+    last_name: Doe
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    avatar: "/samples/content_entries/jade.png"
+- Jido:
+    _slug: jido
+    nickname: Jido
     genre: Mrs
-
+    first_name: Jill
+    last_name: Doe
+    description: Ratione aut quo a suscipit voluptates amet dolor.
+    avatar: "/samples/content_entries/jill.png"

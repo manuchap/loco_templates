@@ -1,6 +1,6 @@
 ---
-title: Members
-handle: members
+title: Deleted Members
+handle: deleted_members
 published: true
 ---
 !!!
@@ -12,10 +12,10 @@ published: true
     %meta{name: "description", value: "{{site.meta_description}}"}
     {{ 'application' | stylesheet_tag }}
   %body
-    %h1 {{page.title}}&nbsp;
-    %p 
-      %a{:href => "{% path_to create_member %}"}New member
+    %h1 {{page.title}}
     {% block 'main' %}
+    %p 
+      %a{:href => "{% path_to members %}"}Back to index
     %table
       %tr
         %th Nickname
@@ -25,6 +25,7 @@ published: true
         %th Description
         %th Avatar
         %th Action
+      {% with_scope _visible: false %}
       {% for member in contents.members %}
       %tr
         %td {{member.nickname | capitalize}}
@@ -37,6 +38,5 @@ published: true
         %td
           %a{:href => "{% path_to member %}"} Edit
       {% endfor %}
-    %p 
-      %a{:href => "{% path_to deleted_members %}"}Deleted Members
+      {% endwith_scope %}
     {% endblock %}

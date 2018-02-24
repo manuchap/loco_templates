@@ -8,3 +8,4 @@ Gemfile.lock
 /bin
 
 .bundle
+config/deploy.yml

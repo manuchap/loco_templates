@@ -31,3 +31,7 @@ locales: [en]
 seo_title: templates
 meta_keywords: "some meta keywords"
 meta_description: "some meta description"
+metafields:
+  google:
+    grecaptcha_site_key: 6LeJZnMUAAAAACYL01TBpZiN3Qan7ViEAeGCpVz6
+    grecaptcha_secret_key: 6LcoW3MUAAAAABsOmwaMY4wzTenRtjggkEfpI08P

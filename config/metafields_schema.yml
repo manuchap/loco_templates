@@ -1,0 +1,9 @@
+google:
+  label: Google
+  fields:
+    grecaptcha_site_key:
+      hint: Get it at https://www.google.com/recaptcha
+      type: string
+    grecaptcha_secret_key:
+      hint: Get it at https://www.google.com/recaptcha
+      type: string

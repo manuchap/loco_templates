@@ -9,8 +9,29 @@ published: true
     %title {{ site.name }}
     %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
     %meta{name: "description", value: "{{ site.meta_description }}"}
+    %script{:async => "", :defer => "defer", :src => "https://www.google.com/recaptcha/api.js"}
   %body
-    %h1 {{ page.title }}
-    {% block 'main' %}
-    %p Lorem ipsum....
-    {% endblock %}
+    {% model_form 'customer_messages', success: '/', error: '/contact' %}
+    {% if customer_message.errors %}
+    %p The following errors occured:
+    %ul
+      {% for error in customer_message.errors %}
+      %li {{error[0] | capitalize}} -  {{error[1]}}
+      {% endfor %}
+    {% endif %}
+    %table
+      %tr
+        %td Name:
+        %td
+          %input{:name => "content[name]", :type => "text", :value => "{{customer_message.name}}"}/
+      %tr
+        %td Email:
+        %td
+          %input{:name => "content[email]", :type => "text", :value => "{{customer_message.email}}"}/
+      %tr
+        %td Message:
+        %td
+          %textarea{:name => "content[message]"} {{customer_message.message}}
+    .g-recaptcha{"data-sitekey" => "{{ site.metafields.google.grecaptcha_site_key }}"}
+    %input{:type => "submit"}/
+    {% endmodel_form %}

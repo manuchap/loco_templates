@@ -55,6 +55,12 @@
     }
 
 /* DESKTOP FIRST *//*
+  @media only screen and (min-width : 1920px) {
+    html {
+      color: red;
+      border: solid red;
+    }
+  }
   @media only screen and (min-width : 1200px) {
     html {
       color: red;
@@ -79,7 +85,7 @@
       border: solid blue;
     }
   }
-  @media only screen and (max-width : 480px) {
+  @media only screen and (max-width : 300px) {
     html {
       color: fuchsia;
       border: solid fuchsia;

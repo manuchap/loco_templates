@@ -5,8 +5,9 @@ published: true
 !!!
 %html#top{lang: "en"}
   %head
-    %meta{charset: "utf-8"}
     %title {{ site.name }}
+    %meta{charset: "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
     %meta{name: "description", value: "{{ site.meta_description }}"}
     {{ 'application' | stylesheet_tag }}
@@ -20,62 +21,62 @@ published: true
           %a{:href => "#text"} Text
           %ul
             %li
-              %a{:href => "#text__headings"} Headings
+              %a{:href => "#text_headings"} Headings
             %li
-              %a{:href => "#text__paragraphs"} Paragraphs
+              %a{:href => "#text_paragraphs"} Paragraphs
             %li
-              %a{:href => "#text__blockquotes"} Blockquotes
+              %a{:href => "#text_blockquotes"} Blockquotes
             %li
-              %a{:href => "#text__lists"} Lists
+              %a{:href => "#text_lists"} Lists
             %li
-              %a{:href => "#text__hr"} Horizontal rules
+              %a{:href => "#text_hr"} Horizontal rules
             %li
-              %a{:href => "#text__tables"} Tabular data
+              %a{:href => "#text_tables"} Tabular data
             %li
-              %a{:href => "#text__code"} Code
+              %a{:href => "#text_code"} Code
             %li
-              %a{:href => "#text__inline"} Inline elements
+              %a{:href => "#text_inline"} Inline elements
         %li
           %a{:href => "#embedded"} Embedded content
           %ul
             %li
-              %a{:href => "#embedded__images"} Images
+              %a{:href => "#embedded_images"} Images
             %li
-              %a{:href => "#embedded__audio"} Audio
+              %a{:href => "#embedded_audio"} Audio
             %li
-              %a{:href => "#embedded__video"} Video
+              %a{:href => "#embedded_video"} Video
             %li
-              %a{:href => "#embedded__canvas"} Canvas
+              %a{:href => "#embedded_canvas"} Canvas
             %li
-              %a{:href => "#embedded__meter"} Meter
+              %a{:href => "#embedded_meter"} Meter
             %li
-              %a{:href => "#embedded__progress"} Progress
+              %a{:href => "#embedded_progress"} Progress
             %li
-              %a{:href => "#embedded__svg"} Inline SVG
+              %a{:href => "#embedded_svg"} Inline SVG
             %li
-              %a{:href => "#embedded__iframe"} IFrames
+              %a{:href => "#embedded_iframe"} IFrames
         %li
           %a{:href => "#forms"} Form elements
           %ul
             %li
-              %a{:href => "#forms__input"} Input fields
+              %a{:href => "#forms_input"} Input fields
             %li
-              %a{:href => "#forms__select"} Select menus
+              %a{:href => "#forms_select"} Select menus
             %li
-              %a{:href => "#forms__checkbox"} Checkboxes
+              %a{:href => "#forms_checkbox"} Checkboxes
             %li
-              %a{:href => "#forms__radio"} Radio buttons
+              %a{:href => "#forms_radio"} Radio buttons
             %li
-              %a{:href => "#forms__textareas"} Textareas
+              %a{:href => "#forms_textareas"} Textareas
             %li
-              %a{:href => "#forms__html5"} HTML5 inputs
+              %a{:href => "#forms_html5"} HTML5 inputs
             %li
-              %a{:href => "#forms__action"} Action buttons
+              %a{:href => "#forms_action"} Action buttons
     %main{:role => "main"}
       %section#text
         %header
           %h1 Text
-        %article#text__headings
+        %article#text_headings
           %header
             %h1 Headings
           %div
@@ -88,7 +89,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#text__paragraphs
+        %article#text_paragraphs
           %header
             %h1 Paragraphs
           %div
@@ -96,7 +97,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#text__blockquotes
+        %article#text_blockquotes
           %header
             %h1 Blockquotes
           %div
@@ -108,7 +109,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#text__lists
+        %article#text_lists
           %header
             %h1 Lists
           %div
@@ -129,7 +130,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#text__hr
+        %article#text_hr
           %header
             %h1 Horizontal rules
           %div
@@ -137,7 +138,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#text__tables
+        %article#text_tables
           %header
             %h1 Tabular data
           %table
@@ -184,7 +185,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#text__code
+        %article#text_code
           %header
             %h1 Code
           %div
@@ -200,18 +201,16 @@ published: true
             %h2 Pre-formatted text
             %pre
               :preserve
-
-                            P R E F O R M A T T E D T E X T
-                            ! " # $ % & ' ( ) * + , - . /
-                            0 1 2 3 4 5 6 7 8 9 : ; < = > ?
-                            @ A B C D E F G H I J K L M N O
-                            P Q R S T U V W X Y Z [ \ ] ^ _
-                            ` a b c d e f g h i j k l m n o
-                            p q r s t u v w x y z { | } ~
-                                  %footer
+                P R E F O R M A T T E D T E X T
+                ! " # $ % & ' ( ) * + , - . /
+                0 1 2 3 4 5 6 7 8 9 : ; < = > ?
+                @ A B C D E F G H I J K L M N O
+                P Q R S T U V W X Y Z [ \ ] ^ _
+                ` a b c d e f g h i j k l m n o
+                p q r s t u v w x y z { | } ~
             %p
               %a{:href => "#top"} [Top]
-        %article#text__inline
+        %article#text_inline
           %header
             %h1 Inline elements
           %div
@@ -284,7 +283,7 @@ published: true
       %section#embedded
         %header
           %h1 Embedded content
-        %article#embedded__images
+        %article#embedded_images
           %header
             %h2 Images
           %div
@@ -312,7 +311,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#embedded__audio
+        %article#embedded_audio
           %header
             %h2 Audio
           %div
@@ -320,23 +319,25 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#embedded__video
+        %article#embedded_video
           %header
             %h2 Video
           %div
-            %video{:controls => ""} video
+            %video{:controls => ""}
+              %source{:src => "https://www.w3schools.com/html/mov_bbb.mp4", :type => "video/mp4"}
+              %source{:src => "https://www.w3schools.com/html/mov_bbb.ogg", :type => "video/ogg"}
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#embedded__canvas
+        %article#embedded_canvas
           %header
             %h2 Canvas
           %div
-            %canvas canvas
+            %canvas#myCanvas canvas
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#embedded__meter
+        %article#embedded_meter
           %header
             %h2 Meter
           %div
@@ -344,7 +345,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#embedded__progress
+        %article#embedded_progress
           %header
             %h2 Progress
           %div
@@ -352,7 +353,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#embedded__svg
+        %article#embedded_svg
           %header
             %h2 Inline SVG
           %div
@@ -361,7 +362,7 @@ published: true
           %footer
             %p
               %a{:href => "#top"} [Top]
-        %article#embedded__iframe
+        %article#embedded_iframe
           %header
             %h2 IFrame
           %div
@@ -373,38 +374,38 @@ published: true
         %header
           %h1 Form elements
         %form
-          %fieldset#forms__input
+          %fieldset#forms_input
             %legend Input fields
             %p
-              %label{:for => "input__text"} Text Input
-              %input#input__text{:placeholder => "Text Input", :type => "text"}/
+              %label{:for => "input_text"} Text Input
+              %input#input_text{:placeholder => "Text Input", :type => "text"}/
             %p
-              %label{:for => "input__password"} Password
-              %input#input__password{:placeholder => "Type your Password", :type => "password"}/
+              %label{:for => "input_password"} Password
+              %input#input_password{:placeholder => "Type your Password", :type => "password"}/
             %p
-              %label{:for => "input__webaddress"} Web Address
-              %input#input__webaddress{:placeholder => "http://yoursite.com", :type => "url"}/
+              %label{:for => "input_webaddress"} Web Address
+              %input#input_webaddress{:placeholder => "http://yoursite.com", :type => "url"}/
             %p
-              %label{:for => "input__emailaddress"} Email Address
-              %input#input__emailaddress{:placeholder => "name@email.com", :type => "email"}/
+              %label{:for => "input_emailaddress"} Email Address
+              %input#input_emailaddress{:placeholder => "name@email.com", :type => "email"}/
             %p
-              %label{:for => "input__phone"} Phone Number
-              %input#input__phone{:placeholder => "(999) 999-9999", :type => "tel"}/
+              %label{:for => "input_phone"} Phone Number
+              %input#input_phone{:placeholder => "(999) 999-9999", :type => "tel"}/
             %p
-              %label{:for => "input__search"} Search
-              %input#input__search{:placeholder => "Enter Search Term", :type => "search"}/
+              %label{:for => "input_search"} Search
+              %input#input_search{:placeholder => "Enter Search Term", :type => "search"}/
             %p
-              %label{:for => "input__text2"} Number Input
-              %input#input__text2{:placeholder => "Enter a Number", :type => "number"}/
+              %label{:for => "input_text2"} Number Input
+              %input#input_text2{:placeholder => "Enter a Number", :type => "number"}/
             %p
-              %label.error{:for => "input__text3"} Error
-              %input#input__text3.is-error{:placeholder => "Text Input", :type => "text"}/
+              %label.error{:for => "input_text3"} Error
+              %input#input_text3.is-error{:placeholder => "Text Input", :type => "text"}/
             %p
-              %label.valid{:for => "input__text4"} Valid
-              %input#input__text4.is-valid{:placeholder => "Text Input", :type => "text"}/
+              %label.valid{:for => "input_text4"} Valid
+              %input#input_text4.is-valid{:placeholder => "Text Input", :type => "text"}/
           %p
             %a{:href => "#top"} [Top]
-          %fieldset#forms__select
+          %fieldset#forms_select
             %legend Select menus
             %p
               %label{:for => "select"} Select
@@ -415,7 +416,7 @@ published: true
                   %option Option Three
           %p
             %a{:href => "#top"} [Top]
-          %fieldset#forms__checkbox
+          %fieldset#forms_checkbox
             %legend Checkboxes
             %ul.list.list--bare
               %li
@@ -432,7 +433,7 @@ published: true
                   Choice C
           %p
             %a{:href => "#top"} [Top]
-          %fieldset#forms__radio
+          %fieldset#forms_radio
             %legend Radio buttons
             %ul.list.list--bare
               %li
@@ -449,14 +450,14 @@ published: true
                   Option 3
           %p
             %a{:href => "#top"} [Top]
-          %fieldset#forms__textareas
+          %fieldset#forms_textareas
             %legend Textareas
             %p
               %label{:for => "textarea"} Textarea
-              %textarea#textarea{:cols => "48", :placeholder => "Enter your message here", :rows => "8"}
+              %textarea#textarea{:placeholder => "Enter your message here", :rows => "8"}
           %p
             %a{:href => "#top"} [Top]
-          %fieldset#forms__html5
+          %fieldset#forms_html5
             %legend HTML5 inputs
             %p
               %label{:for => "ic"} Color input
@@ -484,7 +485,7 @@ published: true
               %input#idtl{:type => "datetime-local", :value => "1970-01-01T00:00"}/
           %p
             %a{:href => "#top"} [Top]
-          %fieldset#forms__action
+          %fieldset#forms_action
             %legend Action buttons
             %p
               %input{:type => "submit", :value => "<input type=submit>"}/
@@ -500,8 +501,15 @@ published: true
             %a{:href => "#top"} [Top]
     %footer{:role => "contentinfo"}
       %p
-        Made by
+        Html Elements by
         = succeed "." do
-          %a{:href => "http://twitter.com/cbracco"} @cbracco
+          %a{:href => "http://github.com/cbracco/html5-test-page"} Cbracco
+      %p
+        ScrollToAnchor by
         = succeed "." do
-          %a{:href => "http://github.com/cbracco/html5-test-page"} GitHub
+          %a{:href => "https://github.com/GabrielDelepine/smooth-scroll/blob/main/smooth-scroll.js"} GabrielDelépine
+      %p
+        Customizations by
+        = succeed "." do
+          %a{:href => "https://github.com/manuchap/loco_templates/tree/html5"} Manuchap
+    {{ 'application' | javascript_tag }}

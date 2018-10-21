@@ -1,115 +1,88 @@
-html {
-  background-color: #000;
-  padding: 1em;
-  margin: 0em;
-}
-
-body {
-  font-family: 'raleway', 'open-sans', sans-serif;
-}
-
-header[role="banner"], nav, footer[role="contentinfo"], main > section {
-  background-color: gainsboro;
-  border-radius: .5em;
-  padding: 1em;
-}
-
-#embedded__images, #forms {
-  width: auto;
-}
-
-img, form, textarea {
-  display: block;
-  max-width: 100%;
-}
-
-@media only screen and (min-width : 320px) {
-  html {
-    border: dotted red;
-  }
-}
-
-@media only screen and (min-width : 480px) {
-  html {
-    border: dotted orange;
-  }
+/* COMMON */
   body {
+    font-family: 'raleway', 'open-sans', sans-serif;
+    font-size: 12pt;
     margin: 0em;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em;
-  }
-  nav {
-  height:50px;
-  width: auto;
-  }
-  nav ul {
-  margin:0;
-  padding:0;
-  list-style-type:none;
-  }
-  nav li {
-  float:left;
-  margin:auto;
-  padding:0;
-  }
-  nav li a {
-  display:block;
-  color:black;
-  text-decoration:none;
-  padding:5px;
-  }
-  nav li a:hover {
-  color:black;
-  }
-  nav ul li ul {
-  display:none;
-  }
-  nav ul li:hover ul {
-  display:block;
-  }
-  nav li:hover ul li {
-  float:none;
-  }
-}
-
-@media only screen and (min-width : 768px) {
-
-  header, footer {
-    grid-column: 1 / -1;
+    padding: 1em;
   }
 
-  body {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 1em;
+/* MOBILE FIRST */
+  img, iframe, form, textarea, video, canvas, pre, table {
+    display: block;
+    max-width: 100%;
   }
 
-  nav {
-    height: auto;
+  pre, table, {
+    overflow-x: scroll;
+    overflow-y: scroll;
   }
 
-  nav ul li ul {
-  display:all;
-  }
+    @media only screen and (min-width : 300px) {
+      html {
+        color: tomato;
+        border: dotted tomato;
+      }
+    }
+    @media only screen and (min-width : 480px) {
+      html {
+        color: orange;
+        border: dotted orange;
+      }
+    }
+    @media only screen and (min-width : 768px) {
+      html {
+        color: mediumseagreen;
+        border: dotted mediumseagreen;
+      }
+    }
+    @media only screen and (min-width : 1024px) {
+      html {
+        color: violet;
+        border: dotted violet;
+      }
+    }
+    @media only screen and (min-width : 1366px) {
+      html {
+        color: dodgerblue;
+        border: dotted dodgerblue;
+      }
+    }
+    @media only screen and (min-width : 1920px) {
+      html {
+        color: slateblue;
+        border: dotted slateblue;
+      }
+    }
 
-  main {
-    display: grid;
-    grid-gap: 1em;
+/* DESKTOP FIRST *//*
+  @media only screen and (min-width : 1200px) {
+    html {
+      color: red;
+      border: solid red;
     }
   }
-
-}
-
-@media only screen and (min-width : 992px) {
-  html {
-    border: dotted blue;
+  @media only screen and (max-width : 1200px) {
+    html {
+      color: orange;
+      border: solid orange;
+    }
   }
-}
-
-@media only screen and (min-width : 1200px) {
-  html {
-    border: dotted fuchsia;
+  @media only screen and (max-width : 992px) {
+    html {
+      color: green;
+      border: solid green;
+    }
   }
-}
-/
+  @media only screen and (max-width : 768px) {
+    html {
+      color: blue;
+      border: solid blue;
+    }
+  }
+  @media only screen and (max-width : 480px) {
+    html {
+      color: fuchsia;
+      border: solid fuchsia;
+    }
+  }
+*/

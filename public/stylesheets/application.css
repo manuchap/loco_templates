@@ -1,7 +1,7 @@
 /* COMMON */
   body {
     font-family: 'raleway', 'open-sans', sans-serif;
-    font-size: 12pt;
+    font-size: 1em;
     margin: 0em;
     padding: 1em;
   }
@@ -45,12 +45,14 @@
       html {
         color: dodgerblue;
         border: dotted dodgerblue;
+        font-size: 1.25em;
       }
     }
     @media only screen and (min-width : 1920px) {
       html {
         color: slateblue;
         border: dotted slateblue;
+        font-size: 1.5em;
       }
     }
 

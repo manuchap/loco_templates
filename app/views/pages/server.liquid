@@ -1,0 +1,21 @@
+---
+title: Server
+listed: true
+published: true
+response_type: application/json
+---
+{% assign token = params.token %}
+{% action "siteverfify" %}
+var token = getProp("token");
+var rc = false;
+rc = callAPI('POST', site.metafields.google.rc_api, {
+  data: {
+    'secret': site.metafields.google.rc_secret_key,
+    'response': token
+  },
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'
+  }
+});
+setProp('data', rc);
+{% endaction %}

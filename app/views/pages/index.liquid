@@ -1,0 +1,35 @@
+---
+title: Home page
+published: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>reCaptcha V3</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src='https://www.recaptcha.net/recaptcha/api.js?render={{ site.metafields.google.rc_site_key }}'></script>
+  <script>
+  function reCaptcha() {
+    grecaptcha.ready(function() {
+      grecaptcha.execute('{{ site.metafields.google.rc_site_key }}', { action: 'homepage' }).then(function(token) {
+        $.ajax({
+          type: 'post',
+          url: './server',
+          data: { token: token },
+          dataType: 'json'
+        }).done(function(data) {
+          alert('Score: ' + data.score);
+        });
+      });
+    });
+  }
+  </script>
+  {% if wagon %}<script src="http://localhost:35729/livereload.js"></script>{% endif %}
+</head>
+<body>
+  <button onclick="reCaptcha()">reCaptcha V3</button>
+</body>
+</html>

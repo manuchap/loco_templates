@@ -1,0 +1,12 @@
+google:
+  label: Google
+  fields:
+    rc_api:
+      hint: Google Recaptcha API
+      type: string
+    rc_site_key:
+      hint: Google Recaptcha site key
+      type: string
+    rc_secret_key:
+      hint: Google Recaptcha secret key
+      type: string

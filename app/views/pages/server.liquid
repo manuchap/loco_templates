@@ -5,10 +5,10 @@ published: true
 response_type: application/json
 ---
 {% assign token = params.token %}
-{% action "siteverfify" %}
-var token = getProp("token");
-var rc = false;
-rc = callAPI('POST', site.metafields.google.rc_api, {
+{% action "siteverify" %}
+var token = getProp('token');
+var verif = false;
+verif = callAPI('POST', site.metafields.google.rc_api, {
   data: {
     'secret': site.metafields.google.rc_secret_key,
     'response': token
@@ -17,5 +17,6 @@ rc = callAPI('POST', site.metafields.google.rc_api, {
     'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'
   }
 });
-setProp('data', rc);
+setProp('data', verif);
 {% endaction %}
+{{ data.data | split: '=>' | join: ': '  }}

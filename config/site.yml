@@ -7,5 +7,5 @@ meta_description: "some meta description"
 metafields:
   google:
     rc_api: https://www.google.com/recaptcha/api/siteverify
-    rc_site_key: 6LcoW3MUAAAAADBhJWlqoYmcQs_ZOeTqlm8wtQ9B
-    rc_secret_key: 6LcoW3MUAAAAABsOmwaMY4wzTenRtjggkEfpI08P
+    rc_site_key: 6LcoW3MUAAAAAXXXX...
+    rc_secret_key: 6LcoW3MUAAAAAXXXX...

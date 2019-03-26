@@ -42,40 +42,40 @@
     var getScrollTopDocument = function() {
       return window.pageYOffset !== undefined ? window.pageYOffset : document.documentElement.scrollTop !== undefined ? document.documentElement.scrollTop : document.body.scrollTop;
     };
+    var c=document.getElementById("myCanvas");
+    var canvOK=1;
+    try {c.getContext("2d");}
+    catch (er) {canvOK=0;}
+    if (canvOK==1)
+     {
+     var ctx=c.getContext("2d");
+     ctx.fillStyle="#FF0000";
+     ctx.fillRect(20,20,100,50);
+
+     var grd=ctx.createLinearGradient(140,20,240,70);
+        grd.addColorStop(0,"black");
+        grd.addColorStop(1,"white");
+        ctx.fillStyle=grd;
+        ctx.fillRect(140,20,100,50);
+
+        var grd2=ctx.createLinearGradient(20,90,120,90);
+        grd2.addColorStop(0,"black");
+        grd2.addColorStop("0.3","magenta");
+        grd2.addColorStop("0.5","blue");
+        grd2.addColorStop("0.6","green");
+        grd2.addColorStop("0.8","yellow");
+        grd2.addColorStop(1,"red");
+        ctx.fillStyle=grd2;
+        ctx.fillRect(20,90,100,50);
+
+        ctx.font="30px Verdana";
+        var grd3=ctx.createLinearGradient(140,20,240,90);
+        grd3.addColorStop(0,"black");
+        grd3.addColorStop("0.3","magenta");
+        grd3.addColorStop("0.6","blue");
+        grd3.addColorStop("0.8","green");
+        grd3.addColorStop(1,"red");
+        ctx.strokeStyle=grd3;
+        ctx.strokeText("Smile!",140,120); }
   })(window);
 
-var c=document.getElementById("myCanvas");
-var canvOK=1;
-try {c.getContext("2d");}
-catch (er) {canvOK=0;}
-if (canvOK==1)
- {
- var ctx=c.getContext("2d");
- ctx.fillStyle="#FF0000";
- ctx.fillRect(20,20,100,50);
-
- var grd=ctx.createLinearGradient(140,20,240,70);
-    grd.addColorStop(0,"black");
-    grd.addColorStop(1,"white");
-    ctx.fillStyle=grd;
-    ctx.fillRect(140,20,100,50);
-
-    var grd2=ctx.createLinearGradient(20,90,120,90);
-    grd2.addColorStop(0,"black");
-    grd2.addColorStop("0.3","magenta");
-    grd2.addColorStop("0.5","blue");
-    grd2.addColorStop("0.6","green");
-    grd2.addColorStop("0.8","yellow");
-    grd2.addColorStop(1,"red");
-    ctx.fillStyle=grd2;
-    ctx.fillRect(20,90,100,50);
-
-    ctx.font="30px Verdana";
-    var grd3=ctx.createLinearGradient(140,20,240,90);
-    grd3.addColorStop(0,"black");
-    grd3.addColorStop("0.3","magenta");
-    grd3.addColorStop("0.6","blue");
-    grd3.addColorStop("0.8","green");
-    grd3.addColorStop(1,"red");
-    ctx.strokeStyle=grd3;
-    ctx.strokeText("Smile!",140,120); }

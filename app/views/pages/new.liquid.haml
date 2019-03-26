@@ -43,9 +43,9 @@ published: true
             :preserve
               {{member.description}}
         %td
-          %img#preview{ :style => "width:100px; height:100px", :alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
+          %img#preview{ :name => "avat", :style => "width:100px; height:100px", :alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
           %br
-          %input#upload{:name => "", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "{{member.avatar.url}}"}/
+          %input#upload{ :name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "{{member.avatar.url}}"}/
         %td
           %input{:type => "submit"}
 %script{:src => "https://unpkg.com/client-compress@2.1.2/dist/index.js"}

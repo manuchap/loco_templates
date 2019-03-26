@@ -8,3 +8,8 @@ prod:
   handle: tranquil-forest-7362
   email: admin@studiowan.fr
   api_key: d2970e5b0e5d0163630eaa5367913f8de4fe496f
+home:
+  host: http://0.0.0.0:5000
+  handle: serene-pine-8779
+  email: manuchap@gmail.com
+  api_key: bc4b7ffa2f71ca9a9c3bf0ca12a35d1bc8c94526

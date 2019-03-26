@@ -42,25 +42,44 @@ content_type: members
             :preserve
               {{member.description}}
         %td
-          %img#avatar{ :style => "width:100px; height:100px", :alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
+          %img#preview{ :style => "width:100px; height:100px", :alt => "{{member.nickname}}", :src => "{{member.avatar.url}}"}/
           %br
-          %input{:name => "avat", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "{{member.avatar.url}}", :onchange => "loadFile(event)"}/
+          %input#upload{:name => "", :accept => "image/jpeg, image/jpg, image/png", "data-max-size" => "2097152", :type => "file", :value => "{{member.avatar.url}}"}/
         %td
           %input{:name => "save", :onclick => "askForSave()", :type => "button", :value => "Save"}/
           %input{:name => "delete", :onclick => "askForDelete()", :type => "button", :value => "Delete"}/
-
+%script{:src => "https://unpkg.com/client-compress@2.1.2/dist/index.js"}
 :javascript
-  var loadFile = function(event) {
-    var output = document.getElementById('avatar');
-    output.src = URL.createObjectURL(event.target.files[0]);
-  };
+  const options = {
+    targetSize: 0.2,
+    quality: 0.75,
+    maxWidth: 100,
+    maxHeight: 100
+  }
+  const compress = new Compress(options)
+  const upload = document.getElementById("upload")
+  upload.addEventListener(
+    "change",
+    (evt) => {
+      const files = [...evt.target.files]
+      compress.compress(files).then((conversions) => {
+        const { photo, info } = conversions[0]
+        console.log({ photo, info })
+        const objectUrl = URL.createObjectURL(photo.data)
+        Compress.loadImageElement(preview, objectUrl).then(() => {
+          URL.revokeObjectURL(objectUrl)
+        })
+      })
+    },
+    false
+  );
   form=document.getElementById("someForm");
   function askForSave() {
-          form.action="{% path_to update_member %}";
-          form.submit();
+    form.action="{% path_to update_member %}";
+    form.submit();
   }
   function askForDelete() {
-          form.action="{% path_to delete_member %}";
-          form.submit();
+    form.action="{% path_to delete_member %}";
+    form.submit();
   }
 {% endblock %}

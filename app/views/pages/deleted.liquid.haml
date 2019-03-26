@@ -14,7 +14,7 @@ published: true
   %body
     %h1 {{page.title}}
     {% block 'main' %}
-    %p 
+    %p
       %a{:href => "{% path_to members %}"}Back to index
     %table
       %tr
@@ -25,7 +25,7 @@ published: true
         %th Description
         %th Avatar
         %th Action
-      {% with_scope _visible: false %}
+      {% with_scope visible: false %}
       {% for member in contents.members %}
       %tr
         %td {{member.nickname | capitalize}}

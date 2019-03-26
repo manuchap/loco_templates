@@ -82,3 +82,10 @@ fields:
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
+
+- visible: # The lowercase, underscored name of the field
+    label: Visible # Human readable name of the field
+    type: boolean
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false

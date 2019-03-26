@@ -25,6 +25,7 @@ published: true
         %th Description
         %th Avatar
         %th Action
+      {% with_scope visible: true %}
       {% for member in contents.members %}
       %tr
         %td {{member.nickname | capitalize}}
@@ -37,6 +38,7 @@ published: true
         %td
           %a{:href => "{% path_to member %}"} Edit
       {% endfor %}
+      {% endwith_scope %}
     %p
       %a{:href => "{% path_to deleted_members %}"}Deleted Members
     {% endblock %}

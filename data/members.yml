@@ -6,7 +6,7 @@
     last_name: Tobe
     description: azervdfgbssdnysdtysdthhsdb(ysynsyey
     avatar: "/samples/content_entries/bugz.png"
-    _visible: false
+    visible: false
 - Jody:
     _slug: jody
     nickname: Jody
@@ -15,6 +15,7 @@
     last_name: Doe
     description: Numquam ut eligendi voluptas harum sed aut blanditiis.
     avatar: "/samples/content_entries/joe.png"
+    visible: true
 - Jako:
     _slug: jako
     nickname: Jako
@@ -23,6 +24,7 @@
     last_name: Doe
     description: Temporibus voluptate libero et laboriosam eum.
     avatar: "/samples/content_entries/john.png"
+    visible: true
 - Jado:
     _slug: jado
     nickname: Jado
@@ -31,6 +33,7 @@
     last_name: Doe
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     avatar: "/samples/content_entries/jade.png"
+    visible: true
 - Jido:
     _slug: jido
     nickname: Jido
@@ -39,3 +42,4 @@
     last_name: Doe
     description: Ratione aut quo a suscipit voluptates amet dolor.
     avatar: "/samples/content_entries/jill.png"
+    visible: true

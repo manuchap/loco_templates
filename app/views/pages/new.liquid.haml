@@ -1,10 +1,12 @@
 ---
-title: New Members
+title: New Member
 handle: new_member
 published: true
 ---
 {% extends 'index' %}
 {% block main %}
+%p
+  %a{:href => "{% path_to members %}"}Back to index
 %form{:action => "{% path_to create_member %}", :enctype => "multipart/form-data", :method => "post"}
   %input{:name => "slug", :type => "hidden", :value => "{{member._slug}}"}/
   %table
@@ -30,7 +32,7 @@ published: true
           %input{:name => "nick", :type => "text", :value => "{{member.nickname}}"}/
         %td
           %select{:name => "genre", :value => ""}
-            %option {{member.genre}}
+            %option {{member.genre_option}}
             {% for genre_option in contents.members.genre_options %}
             %option {{genre_option}}
             {% endfor %}

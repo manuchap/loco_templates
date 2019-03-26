@@ -13,9 +13,9 @@ published: true
     {{ 'application' | stylesheet_tag }}
   %body
     %h1 {{page.title}}
-    {% block 'main' %}
     %p
       %a{:href => "{% path_to members %}"}Back to index
+    {% block 'main' %}
     %table
       %tr
         %th Nickname
@@ -25,7 +25,7 @@ published: true
         %th Description
         %th Avatar
         %th Action
-      {% with_scope visible: false %}
+      {% with_scope deleted: true %}
       {% for member in contents.members %}
       %tr
         %td {{member.nickname | capitalize}}

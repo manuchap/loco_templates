@@ -8,6 +8,6 @@ handle: delete_member
 setProp("member", "{{member}}");
 var params = getProp('params');
 var member = getProp('member');
-updateEntry('members', member, { visible: false });
+updateEntry('members', member, { deleted: true });
 redirectTo('members');
 {% endaction %}

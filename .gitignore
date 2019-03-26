@@ -1,11 +1,6 @@
 
 *.log
-
 Gemfile.lock
-
-.vscode
-
 /bin
-
 .bundle
 config/deploy.yml

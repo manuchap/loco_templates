@@ -1,0 +1,24 @@
+name: Messages
+slug: messages
+description: A description of the content type for the editors
+label_field_name: name
+order_by: manually
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+- email:
+    label: Email
+    type: string
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+- message:
+    label: Message
+    type: text
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false

@@ -17,19 +17,46 @@ published: true
       grecaptcha.execute('{{ site.metafields.google.rc_site_key }}', { action: 'homepage' }).then(function(token) {
         $.ajax({
           type: 'post',
-          url: './server',
+          url: '{% path_to 'server' %}',
           data: { token: token },
           dataType: 'json'
         }).done(function(data) {
-          alert('Score: ' + data.score);
+          if (data.score >= 0.5) {
+            document.getElementById("send").disabled = false;
+          }
         });
       });
     });
-  }
+  };
+  reCaptcha();
   </script>
   {% if wagon %}<script src="http://localhost:35729/livereload.js"></script>{% endif %}
 </head>
 <body>
-  <button onclick="reCaptcha()">reCaptcha V3</button>
+  {% model_form 'customer_messages', success: '/', error: '/' %}
+      {% if customer_message.errors %}
+        <p>The following errors occured:</p>
+        <ul>
+        {% for error in customer_message.errors %}
+          <li>{{error[0] | capitalize}} -  {{error[1]}}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="content[name]" value="{{customer_message.name}}"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="text" name="content[email]" value="{{customer_message.email}}"></td>
+        </tr>
+        <tr>
+          <td>Message:</td>
+          <td><textarea name="content[message]">{{customer_message.message}}</textarea></td>
+        </tr>
+      </table>
+      <input id="send" type="submit" disabled="disabled">
+    {% endmodel_form %}
 </body>
 </html>

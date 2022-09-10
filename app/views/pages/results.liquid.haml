@@ -32,7 +32,7 @@ posts: {{ posts.count_total }}
   Import:
   - @names = ['pages','posts']
   - @names.each do |name|
-    %input{:name => "#{name}", :type => "checkbox"}/
     #{name}
+    %input{:name => "#{name}", :type => "checkbox"}/
   %input{:type => "submit", :value => "Go!"}/
 {% endblock %}

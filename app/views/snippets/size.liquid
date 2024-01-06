@@ -1,0 +1,11 @@
+<script type="text/javascript">
+  window.onload = runTask();
+  function runTask() {
+    const output = document.getElementById('output');
+    let image = new Image();
+    image.src = '{{ avatar.src.url }}';
+    image.onload = function() {
+      output.innerHTML = "Image width: " + image.naturalWidth + "<br />Image Height: " + image.naturalHeight;
+    };
+  };
+</script>

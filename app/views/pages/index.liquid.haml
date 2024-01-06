@@ -10,7 +10,10 @@ published: true
     %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
     %meta{name: "description", value: "{{ site.meta_description }}"}
   %body
-    %h1 {{ page.title }}
     {% block 'main' %}
-    %p Lorem ipsum....
+    {% for avatar in contents.avatars %}
+    %img{:src => "{{ avatar.src.url }}"}
+    #output
+    {% include 'size' %}
+    {% endfor %}
     {% endblock %}
